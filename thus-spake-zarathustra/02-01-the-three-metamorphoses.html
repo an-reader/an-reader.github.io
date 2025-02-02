@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thus Spake Zarathustra</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px 10px;
+      font-family: Courier;
+      font-size: 16px;
+      width: 100vw;
+    }
+
+    a, a:link, a:visited, a:hover, a:active {
+      color: inherit;
+      text-decoration: inherit;
+      font-weight: inherit;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .switch {
+         display: none;
+      }
+
+      .parallel-text {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-bottom: 15px;
+      }
+
+      .vi .vi-active {
+        grid-column: 1;
+      }
+
+      .en .en-active {
+        grid-column: 2;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .switch {
+        text-align: right;
+        position: sticky;
+        top: 10px;
+      }
+
+      .parallel-text {
+        width: 100vw;
+        margin-bottom: 15px;
+      }
+
+      .vi {
+        display: none;
+      }
+
+      .en {
+        display: none;
+      }
+
+      .vi-active {
+        display: block;
+      }
+
+      .en-active {
+        display: block;
+      }
+
+      #lang-toggle {
+        visibility: hidden;
+        width: 0px;
+      }
+
+      #lang-toggle-label {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    function toggle (to) {
+      const lang = document.getElementById("lang-toggle-label").innerHTML
+
+      if (lang === 'EN' || to === "VI") {
+        _toggle('vi', 'vi-active')
+        _toggle('en-active', 'en')
+        const el = document.getElementById("lang-toggle-label")
+        el.innerHTML = 'VI'
+      } else if (lang === 'VI' || to === "EN") {
+        _toggle('vi-active', 'vi')
+        _toggle('en', 'en-active')
+        const el = document.getElementById("lang-toggle-label")
+        el.innerHTML = 'EN'
+      }
+    }
+
+    function _toggle (a, b) {
+      const els = document.getElementsByClassName(a)
+      for (var i = els.length -1; i > -1; i--) {
+        var el = els[i];
+        el.classList.remove(a);
+        el.classList.add(b);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="switch">
+    <input type="checkbox" onclick="toggle()" id="lang-toggle">
+    <label id="lang-toggle-label" for="lang-toggle">VI</label>
+  </div>
+  <div class="parallel-text" id="l_0">
+  <div class="vi">
+    <a href="#l_0">[0]</a>
+    BÀI GIẢNG CỦA ZARATHUSTRA.
+  </div>
+  <div class="en">
+    <a href="#l_0">[0]</a>
+    ZARATHUSTRA’S DISCOURSES.
+  </div>
+</div>
+<div class="parallel-text" id="l_1">
+  <div class="vi">
+    <a href="#l_1">[1]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_1">[1]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_2">
+  <div class="vi">
+    <a href="#l_2">[2]</a>
+    I. BA HÌNH THÁI.
+  </div>
+  <div class="en">
+    <a href="#l_2">[2]</a>
+    I. THE THREE METAMORPHOSES.
+  </div>
+</div>
+<div class="parallel-text" id="l_3">
+  <div class="vi">
+    <a href="#l_3">[3]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_3">[3]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_4">
+  <div class="vi">
+    <a href="#l_4">[4]</a>
+    Có ba hình thái của tinh thần mà ta muốn trình bày với các ngươi: làm thế nào mà tinh thần trở thanh một con lạc đà, con lạc đà trở thành sư tử, và sư tử cuối cùng lại trở thành một đứa trẻ.
+  </div>
+  <div class="en">
+    <a href="#l_4">[4]</a>
+    Three metamorphoses of the spirit do I designate to you: how the spirit becometh a camel, the camel a lion, and the lion at last a child.
+  </div>
+</div>
+<div class="parallel-text" id="l_5">
+  <div class="vi">
+    <a href="#l_5">[5]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_5">[5]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_6">
+  <div class="vi">
+    <a href="#l_6">[6]</a>
+    Có rất nhiều gánh nặng cho tinh thần, và sự tôn kính ngự trị trong những tinh thần nặng trĩu: vì gánh nặng nặng nhất đem đến cho tinh thần sức mạnh.
+  </div>
+  <div class="en">
+    <a href="#l_6">[6]</a>
+    Many heavy things are there for the spirit, the strong load-bearing spirit in which reverence dwelleth: for the heavy and the heaviest longeth its strength.
+  </div>
+</div>
+<div class="parallel-text" id="l_7">
+  <div class="vi">
+    <a href="#l_7">[7]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_7">[7]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_8">
+  <div class="vi">
+    <a href="#l_8">[8]</a>
+    Gánh nặng là gì? tinh thần nặng trĩu hỏi; rồi nó hạ xuống như một con lạc đà chờ được chất đầy.
+  </div>
+  <div class="en">
+    <a href="#l_8">[8]</a>
+    What is heavy? so asketh the load-bearing spirit; then kneeleth it down like the camel, and wanteth to be well laden.
+  </div>
+</div>
+<div class="parallel-text" id="l_9">
+  <div class="vi">
+    <a href="#l_9">[9]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_9">[9]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_10">
+  <div class="vi">
+    <a href="#l_10">[10]</a>
+    Vậy cái gì là thứ nặng nhất, hỡi các anh hùng? tinh thần nặng trĩu hỏi, để tôi có thể gánh vác và hân hoan với sức mạnh của mình.
+  </div>
+  <div class="en">
+    <a href="#l_10">[10]</a>
+    What is the heaviest thing, ye heroes? asketh the load-bearing spirit, that I may take it upon me and rejoice in my strength.
+  </div>
+</div>
+<div class="parallel-text" id="l_11">
+  <div class="vi">
+    <a href="#l_11">[11]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_11">[11]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_12">
+  <div class="vi">
+    <a href="#l_12">[12]</a>
+    Chẳng phải thế này sau: tự làm nhục mình để chế ngự lòng kiêu hãnh? Chỉ ra sự ngu ngơ của một người để chế nhạo sự khôn ngoan của anh ta?
+  </div>
+  <div class="en">
+    <a href="#l_12">[12]</a>
+    Is it not this: To humiliate oneself in order to mortify one’s pride? To exhibit one’s folly in order to mock at one’s wisdom?
+  </div>
+</div>
+<div class="parallel-text" id="l_13">
+  <div class="vi">
+    <a href="#l_13">[13]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_13">[13]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_14">
+  <div class="vi">
+    <a href="#l_14">[14]</a>
+    Hay là thế này: [???] Bỏ qua lý do của chúng ta khi chúng ta ăn mừng chiến thắng? Lên đỉnh núi cao để cám dỗ kẻ đi cám dỗ?
+  </div>
+  <div class="en">
+    <a href="#l_14">[14]</a>
+    Or is it this: To desert our cause when it celebrateth its triumph? To ascend high mountains to tempt the tempter?
+  </div>
+</div>
+<div class="parallel-text" id="l_15">
+  <div class="vi">
+    <a href="#l_15">[15]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_15">[15]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_16">
+  <div class="vi">
+    <a href="#l_16">[16]</a>
+    Hay là thế này: Đón nhận những quả ngọt của tri thức, [và sẵn sàng] vì chân lý mà chịu đựng sự đói khát của tâm hồn?
+  </div>
+  <div class="en">
+    <a href="#l_16">[16]</a>
+    Or is it this: To feed on the acorns and grass of knowledge, and for the sake of truth to suffer hunger of soul?
+  </div>
+</div>
+<div class="parallel-text" id="l_17">
+  <div class="vi">
+    <a href="#l_17">[17]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_17">[17]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_18">
+  <div class="vi">
+    <a href="#l_18">[18]</a>
+    Hay là thế này: Xua đuổi kẻ nói những lời an ủi khi bệnh tật, và làm bạn với người điếc, người không bao giờ nghe thấy lời cầu xin [của ta-người bệnh]?
+  </div>
+  <div class="en">
+    <a href="#l_18">[18]</a>
+    Or is it this: To be sick and dismiss comforters, and make friends of the deaf, who never hear thy requests?
+  </div>
+</div>
+<div class="parallel-text" id="l_19">
+  <div class="vi">
+    <a href="#l_19">[19]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_19">[19]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_20">
+  <div class="vi">
+    <a href="#l_20">[20]</a>
+    Hay là thế này: [Sẵn sàng] đi vào vùng nước bẩn chỉ cần đó là vùng nước của chân lý, và không từ chối những con ếch lạnh và những con cóc nóng?
+  </div>
+  <div class="en">
+    <a href="#l_20">[20]</a>
+    Or is it this: To go into foul water when it is the water of truth, and not disclaim cold frogs and hot toads?
+  </div>
+</div>
+<div class="parallel-text" id="l_21">
+  <div class="vi">
+    <a href="#l_21">[21]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_21">[21]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_22">
+  <div class="vi">
+    <a href="#l_22">[22]</a>
+    Hay là thế này: Yêu thương những kẻ khinh thường ta, và chìa tay ra với cả những bóng ma đang làm chúng ta sợ hãi?
+  </div>
+  <div class="en">
+    <a href="#l_22">[22]</a>
+    Or is it this: To love those who despise us, and give one’s hand to the phantom when it is going to frighten us?
+  </div>
+</div>
+<div class="parallel-text" id="l_23">
+  <div class="vi">
+    <a href="#l_23">[23]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_23">[23]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_24">
+  <div class="vi">
+    <a href="#l_24">[24]</a>
+    Tất cả những điều nặng nề mà tinh thần nặng trĩu gánh chịu: và giống như con lạc đà vội vã đi vào vùng hoang dã khi đã được chất đầy hàng, tinh thần nặng trĩu ấy cũng vội vã đi vào vùng hoang dã của nó.
+  </div>
+  <div class="en">
+    <a href="#l_24">[24]</a>
+    All these heaviest things the load-bearing spirit taketh upon itself: and like the camel, which, when laden, hasteneth into the wilderness, so hasteneth the spirit into its wilderness.
+  </div>
+</div>
+<div class="parallel-text" id="l_25">
+  <div class="vi">
+    <a href="#l_25">[25]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_25">[25]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_26">
+  <div class="vi">
+    <a href="#l_26">[26]</a>
+    Nhưng chính trong vùng hoang dã cô đơn nhất xảy ra sự biến đổi thứ hai: ở đây tinh thần trở thành một con sư tử; nó sẽ được tự do, và có quyền thống trị trong vùng hoang dã của chính nó.
+  </div>
+  <div class="en">
+    <a href="#l_26">[26]</a>
+    But in the loneliest wilderness happeneth the second metamorphosis: here the spirit becometh a lion; freedom will it capture, and lordship in its own wilderness.
+  </div>
+</div>
+<div class="parallel-text" id="l_27">
+  <div class="vi">
+    <a href="#l_27">[27]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_27">[27]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_28">
+  <div class="vi">
+    <a href="#l_28">[28]</a>
+    Nó tìm kiếm Chúa-cuối-cùng của nó ở đây: nó sẽ thù ghét Chúa-cuối-cùng của nó, và để giành chiến thắng Chúa-cuối-cùng, nó sẽ đánh nhau với Chúa-cuối-cùng hay con-rồng-vĩ-đại.
+  </div>
+  <div class="en">
+    <a href="#l_28">[28]</a>
+    Its last Lord it here seeketh: hostile will it be to him, and to its last God; for victory will it struggle with the great dragon.
+  </div>
+</div>
+<div class="parallel-text" id="l_29">
+  <div class="vi">
+    <a href="#l_29">[29]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_29">[29]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_30">
+  <div class="vi">
+    <a href="#l_30">[30]</a>
+    Con-rồng-vĩ-đại mà tinh thần không còn muốn gọi là Chúa và Thượng đế là gì? "Ngươi-sẽ-trở-thành", Con-rồng-vĩ-đại được gọi như vậy. Nhưng tinh thần của sư tử nói, "Ta-sẽ-trở-thành".
+  </div>
+  <div class="en">
+    <a href="#l_30">[30]</a>
+    What is the great dragon which the spirit is no longer inclined to call Lord and God? “Thou shalt,” is the great dragon called. But the spirit of the lion saith, “I will.”
+  </div>
+</div>
+<div class="parallel-text" id="l_31">
+  <div class="vi">
+    <a href="#l_31">[31]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_31">[31]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_32">
+  <div class="vi">
+    <a href="#l_32">[32]</a>
+    "Ngươi-sẽ-trở-thành", nằm trên đường đi của nó, lấp lánh vàng - một con thú phủ đầy vảy; và trên mỗi vảy đều lấp lánh vàng, "Ngươi-sẽ-trở-thành!"
+  </div>
+  <div class="en">
+    <a href="#l_32">[32]</a>
+    “Thou shalt,” lieth in its path, sparkling with gold—a scale-covered beast; and on every scale glittereth golden, “Thou shalt!”
+  </div>
+</div>
+<div class="parallel-text" id="l_33">
+  <div class="vi">
+    <a href="#l_33">[33]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_33">[33]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_34">
+  <div class="vi">
+    <a href="#l_34">[34]</a>
+    Những giá trị của một ngàn năm lấp lánh trên những chiếc vảy đó, và con rồng hùng mạnh nhất trong tất cả các con rồng nói như sau: "Giá trị của mọi thứ trên đời - đang lấp lánh trên ta.
+  </div>
+  <div class="en">
+    <a href="#l_34">[34]</a>
+    The values of a thousand years glitter on those scales, and thus speaketh the mightiest of all dragons: “All the values of things—glitter on me.
+  </div>
+</div>
+<div class="parallel-text" id="l_35">
+  <div class="vi">
+    <a href="#l_35">[35]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_35">[35]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_36">
+  <div class="vi">
+    <a href="#l_36">[36]</a>
+    Ta đại diện cho tất cả các giá trị đã từng được tạo ra, và tất cả các giá trị đã được tạo ra. Thật vậy, sẽ không còn 'Ta-sẽ-trở-thành' nữa." Con rồng đã nói như vậy.
+  </div>
+  <div class="en">
+    <a href="#l_36">[36]</a>
+    All values have already been created, and all created values—do I represent. Verily, there shall be no ‘I will’ any more.” Thus speaketh the dragon.
+  </div>
+</div>
+<div class="parallel-text" id="l_37">
+  <div class="vi">
+    <a href="#l_37">[37]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_37">[37]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_38">
+  <div class="vi">
+    <a href="#l_38">[38]</a>
+    Hỡi những người anh em của ta, tại sao lại cần đến sư tử trong tinh thần? Tại sao chỉ con thú biết gánh vác, buông bỏ và kính cẩn là không đủ?
+  </div>
+  <div class="en">
+    <a href="#l_38">[38]</a>
+    My brethren, wherefore is there need of the lion in the spirit? Why sufficeth not the beast of burden, which renounceth and is reverent?
+  </div>
+</div>
+<div class="parallel-text" id="l_39">
+  <div class="vi">
+    <a href="#l_39">[39]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_39">[39]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_40">
+  <div class="vi">
+    <a href="#l_40">[40]</a>
+    Để tạo ra các giá trị mới - ngay cả sư tử vẫn chưa thể tạo ra được các giá trị mới: nhưng sức mạnh của sư thử có thể tạo ra sự tự do cho việc sáng tạo mới.
+  </div>
+  <div class="en">
+    <a href="#l_40">[40]</a>
+    To create new values—that, even the lion cannot yet accomplish: but to create itself freedom for new creating—that can the might of the lion do.
+  </div>
+</div>
+<div class="parallel-text" id="l_41">
+  <div class="vi">
+    <a href="#l_41">[41]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_41">[41]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_42">
+  <div class="vi">
+    <a href="#l_42">[42]</a>
+    Để tạo ra sự tự do cho chính mình, và đưa ra một lời từ chối thánh thiện ngay cả với bổn phận: vì thế, những người anh em của ta, cần có sư tử.
+  </div>
+  <div class="en">
+    <a href="#l_42">[42]</a>
+    To create itself freedom, and give a holy Nay even unto duty: for that, my brethren, there is need of the lion.
+  </div>
+</div>
+<div class="parallel-text" id="l_43">
+  <div class="vi">
+    <a href="#l_43">[43]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_43">[43]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_44">
+  <div class="vi">
+    <a href="#l_44">[44]</a>
+    Thừa nhận quyền hạn của mình đối với các giá trị mới—đó là giả định đáng sợ nhất đối với một tinh thần nặng trĩu và kính cẩn. Đối với một tinh thần như vậy, việc đó là săn mồi, và đó là công việc của một con thú săn mồi.
+  </div>
+  <div class="en">
+    <a href="#l_44">[44]</a>
+    To assume the right to new values—that is the most formidable assumption for a load-bearing and reverent spirit. Verily, unto such a spirit it is preying, and the work of a beast of prey.
+  </div>
+</div>
+<div class="parallel-text" id="l_45">
+  <div class="vi">
+    <a href="#l_45">[45]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_45">[45]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_46">
+  <div class="vi">
+    <a href="#l_46">[46]</a>
+    Nó đã từng yêu "Ngươi-sẽ-trở-thành", đó là điều thiêng liêng nhất của nó: bây giờ nó buộc phải nhìn thấy ảo ảnh và sự tùy tiện ngay cả trong những điều thiêng liêng nhất, để nó có thể giành được sự tự do cho tình yêu của mình: sư tử là thứ cần thiết cho việc này.
+  </div>
+  <div class="en">
+    <a href="#l_46">[46]</a>
+    As its holiest, it once loved “Thou shalt”: now is it forced to find illusion and arbitrariness even in the holiest things, that it may capture freedom from its love: the lion is needed for this capture.
+  </div>
+</div>
+<div class="parallel-text" id="l_47">
+  <div class="vi">
+    <a href="#l_47">[47]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_47">[47]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_48">
+  <div class="vi">
+    <a href="#l_48">[48]</a>
+    Nhưng hãy cho ta biết, những người anh em của ta, đứa trẻ có thể làm điểu gì mà ngay cả sư tử cũng không thể làm? Tại sao sư tử săn mồi vẫn chưa trở thành một đứa trẻ?
+  </div>
+  <div class="en">
+    <a href="#l_48">[48]</a>
+    But tell me, my brethren, what the child can do, which even the lion could not do? Why hath the preying lion still to become a child?
+  </div>
+</div>
+<div class="parallel-text" id="l_49">
+  <div class="vi">
+    <a href="#l_49">[49]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_49">[49]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_50">
+  <div class="vi">
+    <a href="#l_50">[50]</a>
+    Sự ngây thơ chính là đứa trẻ, sự lãng quên, một khởi đầu mới, một trò chơi, một bánh xe tự lăn, cử động đầu tiên, một tiếng "Vâng" thánh thiện.
+  </div>
+  <div class="en">
+    <a href="#l_50">[50]</a>
+    Innocence is the child, and forgetfulness, a new beginning, a game, a self-rolling wheel, a first movement, a holy Yea.
+  </div>
+</div>
+<div class="parallel-text" id="l_51">
+  <div class="vi">
+    <a href="#l_51">[51]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_51">[51]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_52">
+  <div class="vi">
+    <a href="#l_52">[52]</a>
+    [???] Vâng, với trò chơi sáng tạo, những người anh em của ta, cần có một câu trả lời "Vâng" thánh thiện cho sự sống: Ý muốn của CHÍNH NÓ, bây giờ là ý muốn của tinh thần; THẾ GIỚI CHÍNH NÓ đã chinh phục từ những kẻ bị ruồng bỏ.
+  </div>
+  <div class="en">
+    <a href="#l_52">[52]</a>
+    Aye, for the game of creating, my brethren, there is needed a holy Yea unto life: ITS OWN will, willeth now the spirit; HIS OWN world winneth the world’s outcast.
+  </div>
+</div>
+<div class="parallel-text" id="l_53">
+  <div class="vi">
+    <a href="#l_53">[53]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_53">[53]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_54">
+  <div class="vi">
+    <a href="#l_54">[54]</a>
+    Ta đã chỉ cho các ngươi ba sự biến đổi của tinh thần: tinh thần trở thành lạc đà, lạc đà thành sư tử, và cuối cùng sư tử thành trẻ con.—
+  </div>
+  <div class="en">
+    <a href="#l_54">[54]</a>
+    Three metamorphoses of the spirit have I designated to you: how the spirit became a camel, the camel a lion, and the lion at last a child.—
+  </div>
+</div>
+<div class="parallel-text" id="l_55">
+  <div class="vi">
+    <a href="#l_55">[55]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_55">[55]</a>
+
+  </div>
+</div>
+<div class="parallel-text" id="l_56">
+  <div class="vi">
+    <a href="#l_56">[56]</a>
+    Zarathustra đã nói vậy. Và khi đó, anh đang ở một thị trấn có tên là Con Bò Đốm.
+  </div>
+  <div class="en">
+    <a href="#l_56">[56]</a>
+    Thus spake Zarathustra. And at that time he abode in the town which is called The Pied Cow.
+  </div>
+</div>
+<div class="parallel-text" id="l_57">
+  <div class="vi">
+    <a href="#l_57">[57]</a>
+
+  </div>
+  <div class="en">
+    <a href="#l_57">[57]</a>
+
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  toggle("VI")
+</script>
+</html>
