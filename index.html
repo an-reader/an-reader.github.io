@@ -1,0 +1,59 @@
+<!-- generate a simple html page with a header, a footer, and a main content area -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An - The Reader</title>
+    <style>
+      .toc {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+      .toc-row {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .toc-cell {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .toc-header {
+        border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <!-- Table of contents -->
+    <table class="toc">
+        <thead>
+            <tr>
+                <th class="toc-header">Book</th>
+                <th class="toc-header">Author</th>
+                <th class="toc-header">Published</th>
+                <th class="toc-header">Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="toc-row">
+                <td class="toc-cell"><a href="./thus-spake-zarathustra/01-prolouge.html">THUS SPAKE ZARATHUSTRA</a></td>
+                <td class="toc-cell">
+                  <a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche">Friedrich Nietzsche</a>
+                </td>
+                <td class="toc-cell">1885</td>
+                <td class="toc-cell"><a href="https://www.gutenberg.org/files/1998/1998-h/1998-h.htm">Gutenberg</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

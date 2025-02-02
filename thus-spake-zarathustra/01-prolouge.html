@@ -1,0 +1,2913 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Thus Spake Zarathustra</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px 10px;
+      font-family: Courier;
+      font-size: 16px;
+      width: 100vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+      .switch {
+         display: none;
+      }
+
+      .parallel-text {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-bottom: 15px;
+      }
+
+      .vi .vi-active {
+        grid-column: 1;
+      }
+
+      .en .en-active {
+        grid-column: 2;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .switch {
+        text-align: right;
+        position: sticky;
+        top: 10px;
+      }
+
+      .parallel-text {
+        width: 100vw;
+        margin-bottom: 15px;
+      }
+
+      .vi {
+        display: none;
+      }
+
+      .en {
+        display: none;
+      }
+
+      .vi-active {
+        display: block;
+      }
+
+      .en-active {
+        display: block;
+      }
+
+      #lang-toggle {
+        visibility: hidden;
+        width: 0px;
+      }
+
+      #lang-toggle-label {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    function toggle (to) {
+      const lang = document.getElementById("lang-toggle-label").innerHTML
+
+      if (lang === 'EN' || to === "VI") {
+        _toggle('vi', 'vi-active')
+        _toggle('en-active', 'en')
+        const el = document.getElementById("lang-toggle-label")
+        el.innerHTML = 'VI'
+      } else if (lang === 'VI' || to === "EN") {
+        _toggle('vi-active', 'vi')
+        _toggle('en', 'en-active')
+        const el = document.getElementById("lang-toggle-label")
+        el.innerHTML = 'EN'
+      }
+    }
+
+    function _toggle (a, b) {
+      const els = document.getElementsByClassName(a)
+      for (var i = els.length -1; i > -1; i--) {
+        var el = els[i];
+        el.classList.remove(a);
+        el.classList.add(b);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="switch">
+    <input type="checkbox" onclick="toggle()" id="lang-toggle">
+    <label id="lang-toggle-label" for="lang-toggle">VI</label>
+  </div>
+  <div class="parallel-text">
+  <div class="vi">
+    [0] ZARATHUSTRA ĐÃ NÓI NHƯ VẬY.
+  </div>
+  <div class="en">
+    [0] THUS SPAKE ZARATHUSTRA.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [1]
+  </div>
+  <div class="en">
+    [1]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [2] PHẦN MỘT. BÀI DIỄN GIẢNG CỦA ZARATHUSTRA.
+  </div>
+  <div class="en">
+    [2] FIRST PART. ZARATHUSTRA’S DISCOURSES.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [3]
+  </div>
+  <div class="en">
+    [3]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [4] LỜI MỞ ĐẦU CỦA ZARATHUSTRA.
+  </div>
+  <div class="en">
+    [4] ZARATHUSTRA’S PROLOGUE.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [5]
+  </div>
+  <div class="en">
+    [5]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [6] 1.
+  </div>
+  <div class="en">
+    [6] 1.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [7]
+  </div>
+  <div class="en">
+    [7]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [8] Khi Zarathustra được ba mươi tuổi, anh rời bỏ nhà cửa và hồ nước quê hương, và đi vào vùng núi. Ở đó, anh tận hưởng tinh thần và sự cô đơn của mình, và trong mười năm, anh không hề mệt mỏi vì điều đó. Nhưng cuối cùng, trái tim anh thay đổi,— và một buổi sáng thức dậy khi bình minh tươi hồng, anh đứng trước mặt trời và nói như thế này:
+  </div>
+  <div class="en">
+    [8] When Zarathustra was thirty years old, he left his home and the lake of his home, and went into the mountains. There he enjoyed his spirit and solitude, and for ten years did not weary of it. But at last his heart changed,—and rising one morning with the rosy dawn, he went before the sun, and spake thus unto it:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [9]
+  </div>
+  <div class="en">
+    [9]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [10] Hỡi vì sao vĩ đại! Hạnh phúc của ngươi sẽ thế nào nếu không có những người mà ngươi soi sáng!
+  </div>
+  <div class="en">
+    [10] Thou great star! What would be thy happiness if thou hadst not those for whom thou shinest!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [11]
+  </div>
+  <div class="en">
+    [11]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [12] Mười năm nay ngươi đã trèo lên hang động của ta: ngươi hẳn đã mệt mỏi vì ánh sáng và cuộc hành trình của mình, nếu không có ta, con đại bàng và con rắn của ta.
+  </div>
+  <div class="en">
+    [12] For ten years hast thou climbed hither unto my cave: thou wouldst have wearied of thy light and of the journey, had it not been for me, mine eagle, and my serpent.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [13]
+  </div>
+  <div class="en">
+    [13]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [14] Nhưng chúng ta đã đợi ngươi mỗi sáng, lấy phần dư thừa của ngươi và ban phước cho ngươi vì điều đó.
+  </div>
+  <div class="en">
+    [14] But we awaited thee every morning, took from thee thine overflow and blessed thee for it.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [15]
+  </div>
+  <div class="en">
+    [15]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [16] Này! Ta mệt mỏi với sự khôn ngoan của mình, giống như con ong đã gom quá nhiều mật; Ta cần những bàn tay dang rộng để đón lấy nó.
+  </div>
+  <div class="en">
+    [16] Lo! I am weary of my wisdom, like the bee that hath gathered too much honey; I need hands outstretched to take it.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [17]
+  </div>
+  <div class="en">
+    [17]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [18] Ta muốn ban tặng và phân phát cho đến khi người khôn ngoan một lần nữa hân-hoan trong sự ngu ngơ của họ, và người nghèo hạnh phúc trong sự giàu có của họ.
+  </div>
+  <div class="en">
+    [18] I would fain bestow and distribute, until the wise have once more become joyous in their folly, and the poor happy in their riches.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [19]
+  </div>
+  <div class="en">
+    [19]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [20] Vì thế, ta phải đi xuống dưới: như ngươi đã làm vào buổi tối, khi ngươi sang phía bên kia biển, và chiếu sáng cho thế giới bên dưới, hỡi vì sao rực rỡ!
+  </div>
+  <div class="en">
+    [20] Therefore must I descend into the deep: as thou doest in the evening, when thou goest behind the sea, and givest light also to the nether-world, thou exuberant star!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [21]
+  </div>
+  <div class="en">
+    [21]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [22] Giống như ngươi, ta phải ĐI-XUỐNG, như người ta vẫn nói, với những người mà ta sẽ xuống cùng.
+  </div>
+  <div class="en">
+    [22] Like thee must I GO DOWN, as men say, to whom I shall descend.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [23]
+  </div>
+  <div class="en">
+    [23]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [24] Vậy thì, hãy ban cho ta đôi mắt thanh thản của ngươi, để ta có thể nhìn thấy hạnh phúc lớn lao nhất mà không ghen tị!
+  </div>
+  <div class="en">
+    [24] Bless me, then, thou tranquil eye, that canst behold even the greatest happiness without envy!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [25]
+  </div>
+  <div class="en">
+    [25]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [26] Xin ban phước cho chiếc cốc sắp tràn, để nước chảy ra từ đó thành dòng vàng óng, và mang theo khắp nơi sự phản chiếu hạnh phúc của ngươi!
+  </div>
+  <div class="en">
+    [26] Bless the cup that is about to overflow, that the water may flow golden out of it, and carry everywhere the reflection of thy bliss!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [27]
+  </div>
+  <div class="en">
+    [27]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [28] Này! Chiếc cốc lại sắp cạn, và Zarathustra lại trở thành một con người.
+  </div>
+  <div class="en">
+    [28] Lo! This cup is again going to empty itself, and Zarathustra is again going to be a man.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [29]
+  </div>
+  <div class="en">
+    [29]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [30] Và thế là Zarathustra bắt đầu đi-xuống.
+  </div>
+  <div class="en">
+    [30] Thus began Zarathustra’s down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [31]
+  </div>
+  <div class="en">
+    [31]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [32] 2.
+  </div>
+  <div class="en">
+    [32] 2.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [33]
+  </div>
+  <div class="en">
+    [33]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [34] Zarathustra đi xuống núi một mình, không ai đón chào. Nhưng khi vào rừng, đột nhiên có một ông già đứng trước mặt Zarathustra, ông già rời khỏi chiếc giường thánh của mình để tìm rễ cây. Và ông già nói với Zarathustra như sau:
+  </div>
+  <div class="en">
+    [34] Zarathustra went down the mountain alone, no one meeting him. When he entered the forest, however, there suddenly stood before him an old man, who had left his holy cot to seek roots. And thus spake the old man to Zarathustra:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [35]
+  </div>
+  <div class="en">
+    [35]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [36] “Con người lang thang này không xa lạ gì với tôi: nhiều năm trước anh ta đã đi qua. Anh ta được gọi là Zarathustra; nhưng anh ta đã thay đổi.
+  </div>
+  <div class="en">
+    [36] “No stranger to me is this wanderer: many years ago passed he by. Zarathustra he was called; but he hath altered.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [37]
+  </div>
+  <div class="en">
+    [37]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [38] Lúc đó anh đang mang tro tàn của mình vào núi: bây giờ anh lại mang lửa của mình vào thung lũng sao? Anh không sợ số phận của kẻ đốt phá sao, Zarathustra?
+  </div>
+  <div class="en">
+    [38] Then thou carriedst thine ashes into the mountains: wilt thou now carry thy fire into the valleys? Fearest thou not the incendiary’s doom?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [39]
+  </div>
+  <div class="en">
+    [39]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [40] Vâng, ta nhận ra Zarathustra. Đôi mắt của anh ta trong sáng, và không có sự ghê tởm nào ẩn núp trong miệng anh ta. [???] Anh ấy không đi như một vũ công sao?
+  </div>
+  <div class="en">
+    [40] Yea, I recognise Zarathustra. Pure is his eye, and no loathing lurketh about his mouth. Goeth he not along like a dancer?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [41]
+  </div>
+  <div class="en">
+    [41]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [42] Zarathustra đã thay đổi; Zarathustra đã trở thành một đứa trẻ; Zarathustra đã thức tỉnh: Zarathustra sẽ làm gì ở vùng đất của những kẻ ngủ mê?
+  </div>
+  <div class="en">
+    [42] Altered is Zarathustra; a child hath Zarathustra become; an awakened one is Zarathustra: what wilt thou do in the land of the sleepers?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [43]
+  </div>
+  <div class="en">
+    [43]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [44] Anh đã sống cô độc trong biển cả, và [biển cả] đã nâng anh lên. Than ôi, Zarathustra, giờ anh lại lên bờ sao? Than ôi, anh lại tự kéo lê thân xác mình sao?”
+  </div>
+  <div class="en">
+    [44] As in the sea hast thou lived in solitude, and it hath borne thee up. Alas, wilt thou now go ashore? Alas, wilt thou again drag thy body thyself?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [45]
+  </div>
+  <div class="en">
+    [45]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [46] Zarathustra trả lời: “Tôi yêu con người.”
+  </div>
+  <div class="en">
+    [46] Zarathustra answered: “I love mankind.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [47]
+  </div>
+  <div class="en">
+    [47]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [48] “Tại sao,” ông già nói, “ta lại đi vào rừng và sa mạc? Chẳng phải vì ta đã quá yêu con người sao?
+  </div>
+  <div class="en">
+    [48] “Why,” said the saint, “did I go into the forest and the desert? Was it not because I loved men far too well?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [49]
+  </div>
+  <div class="en">
+    [49]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [50] Bây giờ ta yêu Chúa: còn con người, ta không yêu. Con người là một thứ quá bất toàn đối với ta. Yêu con người sẽ là tai họa cho ta.”
+  </div>
+  <div class="en">
+    [50] Now I love God: men, I do not love. Man is a thing too imperfect for me. Love to man would be fatal to me.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [51]
+  </div>
+  <div class="en">
+    [51]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [52] Zarathustra trả lời: “Tôi đã nói gì về tình yêu! Tôi đang mang quà tặng đến cho con người.”
+  </div>
+  <div class="en">
+    [52] Zarathustra answered: “What spake I of love! I am bringing gifts unto men.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [53]
+  </div>
+  <div class="en">
+    [53]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [54] “Đừng cho họ bất cứ thứ gì,” ông già nói. “Hãy lấy một phần gánh nặng của họ và mang nó theo cùng họ—đó sẽ là điều dễ chịu nhất đối với họ: nếu nó cũng dễ chịu đối với anh!
+  </div>
+  <div class="en">
+    [54] “Give them nothing,” said the saint. “Take rather part of their load, and carry it along with them—that will be most agreeable unto them: if only it be agreeable unto thee!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [55]
+  </div>
+  <div class="en">
+    [55]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [56] Còn nếu anh muốn cho họ, đừng cho họ điểu gì nhiều hơn một khoản bố thí, và hãy chờ đến khi họ cầu xin điều đó!”
+  </div>
+  <div class="en">
+    [56] If, however, thou wilt give unto them, give them no more than an alms, and let them also beg for it!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [57]
+  </div>
+  <div class="en">
+    [57]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [58] “Không,” Zarathustra đáp, “Tôi không bố thí. Tôi không đủ nghèo để làm điều đó.”
+  </div>
+  <div class="en">
+    [58] “No,” replied Zarathustra, “I give no alms. I am not poor enough for that.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [59]
+  </div>
+  <div class="en">
+    [59]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [60] Ông già cười Zarathustra và nói như thế này: “Vậy thì hãy đảm bảo rằng họ chấp nhận kho báu của anh! Họ không tin tưởng vào các ẩn sĩ, và không tin rằng chúng ta đến với những món quà.
+  </div>
+  <div class="en">
+    [60] The saint laughed at Zarathustra, and spake thus: “Then see to it that they accept thy treasures! They are distrustful of anchorites, and do not believe that we come with gifts.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [61]
+  </div>
+  <div class="en">
+    [61]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [62] Tiếng bước chân của chúng ta quá vang vọng trên phố của họ. Và cũng giống như khi họ nằm trên giường ban đêm và nghe thấy tiếng người đi ra ngoài rất lâu trước khi mặt trời mọc, họ tự hỏi về chúng ta: Kẻ trộm đi đâu?
+  </div>
+  <div class="en">
+    [62] The fall of our footsteps ringeth too hollow through their streets. And just as at night, when they are in bed and hear a man abroad long before sunrise, so they ask themselves concerning us: Where goeth the thief?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [63]
+  </div>
+  <div class="en">
+    [63]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [64] Đừng đến với con người, hãy ở lại trong rừng! Hãy đến với loài vật! Tại sao không giống như ta—một con gấu giữa những con gấu, một con chim giữa những con chim?”
+  </div>
+  <div class="en">
+    [64] Go not to men, but stay in the forest! Go rather to the animals! Why not be like me—a bear amongst bears, a bird amongst birds?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [65]
+  </div>
+  <div class="en">
+    [65]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [66] “Vậy các vị thánh làm gì ở trong rừng?” Zarathustra hỏi.
+  </div>
+  <div class="en">
+    [66] “And what doeth the saint in the forest?” asked Zarathustra.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [67]
+  </div>
+  <div class="en">
+    [67]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [68] Ông già trả lời: “Ta sáng tác thánh ca và hát chúng; và khi sáng tác thánh ca, ta cười, ta khóc và ta cầu nguyện: và đó là cách ta ca tụng đức Chúa Trời.
+  </div>
+  <div class="en">
+    [68] The saint answered: “I make hymns and sing them; and in making hymns I laugh and weep and mumble: thus do I praise God.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [69]
+  </div>
+  <div class="en">
+    [69]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [70] Với tiếng hát, tiếng khóc, tiếng cười và tiếng cầu nguyện, ta ca tụng Đức Chúa Trời là Đức Chúa Trời của ta. Còn anh, anh mang đến cho ta món quà gì?”
+  </div>
+  <div class="en">
+    [70] With singing, weeping, laughing, and mumbling do I praise the God who is my God. But what dost thou bring us as a gift?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [71]
+  </div>
+  <div class="en">
+    [71]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [72] Khi Zarathustra nghe những lời này, anh cúi chào ông già và nói: "Tôi có gì để cho ngài đây! Hãy để tôi nhanh chân ra khỏi đây kẻo tôi lấy mất của ngài!"—Và họ chia tay nhau như vậy, ông già và Zarathustra, cười với nhau như những cậu học trò.
+  </div>
+  <div class="en">
+    [72] When Zarathustra had heard these words, he bowed to the saint and said: “What should I have to give thee! Let me rather hurry hence lest I take aught away from thee!”—And thus they parted from one another, the old man and Zarathustra, laughing like schoolboys.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [73]
+  </div>
+  <div class="en">
+    [73]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [74] Tuy nhiên, khi Zarathustra đã ở một mình, anh tự nhủ: “Có thể nào! Vị thánh già trong rừng này vẫn chưa nghe nói đến điều đó, rằng CHÚA ĐÃ CHẾT!”
+  </div>
+  <div class="en">
+    [74] When Zarathustra was alone, however, he said to his heart: “Could it be possible! This old saint in the forest hath not yet heard of it, that GOD IS DEAD!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [75]
+  </div>
+  <div class="en">
+    [75]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [76] 3.
+  </div>
+  <div class="en">
+    [76] 3.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [77]
+  </div>
+  <div class="en">
+    [77]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [78] Khi Zarathustra đến thị trấn đầu tiên giáp với khu rừng, anh thấy nhiều người tụ tập ở chợ; vì có tin rằng một người đi dây sẽ biểu diễn. Và Zarathustra nói với mọi người:
+  </div>
+  <div class="en">
+    [78] When Zarathustra arrived at the nearest town which adjoineth the forest, he found many people assembled in the market-place; for it had been announced that a rope-dancer would give a performance. And Zarathustra spake thus unto the people:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [79]
+  </div>
+  <div class="en">
+    [79]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [80] TA DẠY CÁC NGƯƠI VỀ SUPERMAN. Con người là thứ cần phải vượt qua. Các ngươi đã làm gì để vượt qua chính mình?
+  </div>
+  <div class="en">
+    [80] I TEACH YOU THE SUPERMAN. Man is something that is to be surpassed. What have ye done to surpass man?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [81]
+  </div>
+  <div class="en">
+    [81]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [82] Mọi sinh vật cho đến nay đều đã tạo ra thứ gì đó vượt xa bản thân chúng: và các ngươi muốn trở thành một ngọn sóng trong con sóng lớn đó, hay là các ngươi muốn quay trở lại với loài thú hơn là vượt qua giới hạn của con người?
+  </div>
+  <div class="en">
+    [82] All beings hitherto have created something beyond themselves: and ye want to be the ebb of that great tide, and would rather go back to the beast than surpass man?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [83]
+  </div>
+  <div class="en">
+    [83]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [84] Đối với con người, loài vượn là gì? Một trò cười, một thứ đáng hổ thẹn. Và đối với Superman con người cũng sẽ như vậy: một trò cười, một thứ đáng hổ thẹn.
+  </div>
+  <div class="en">
+    [84] What is the ape to man? A laughing-stock, a thing of shame. And just the same shall man be to the Superman: a laughing-stock, a thing of shame.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [85]
+  </div>
+  <div class="en">
+    [85]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [86] Các ngươi đã đi từ loài sâu thành loài người, và nhiều thứ bên trong các ngươi vẫn còn là sâu bọ. Các ngươi đã từng là loài vượn, và thậm chí con người còn giống vượn hơn bất kỳ loài vượn nào.
+  </div>
+  <div class="en">
+    [86] Ye have made your way from the worm to man, and much within you is still worm. Once were ye apes, and even yet man is more of an ape than any of the apes.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [87]
+  </div>
+  <div class="en">
+    [87]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [88] Ngay cả người thông thái nhất trong số các ngươi cũng chỉ là sự bất hòa và lai tạp giữa thực vật và bóng ma. Nhưng ta có bảo các ngươi trở thành bóng ma hay thực vật không?
+  </div>
+  <div class="en">
+    [88] Even the wisest among you is only a disharmony and hybrid of plant and phantom. But do I bid you become phantoms or plants?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [89]
+  </div>
+  <div class="en">
+    [89]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [90] Này, ta dạy các ngươi về Superman!
+  </div>
+  <div class="en">
+    [90] Lo, I teach you the Superman!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [91]
+  </div>
+  <div class="en">
+    [91]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [92] [???] Superman là ý nghĩa của mặt đất. Hãy để ý chí của các ngươi nói rằng: Superman SẼ LÀ ý nghĩa của mặt đất!
+  </div>
+  <div class="en">
+    [92] The Superman is the meaning of the earth. Let your will say: The Superman SHALL BE the meaning of the earth!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [93]
+  </div>
+  <div class="en">
+    [93]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [94] Ta xin các ngươi, những người anh em của ta, HÃY TRỞ LẠI MẶT ĐẤT, và đừng tin những kẻ nói với các ngươi về những hy vọng siêu nhiên! Họ là những kẻ đầu độc, dù họ có nhận ra hay không.
+  </div>
+  <div class="en">
+    [94] I conjure you, my brethren, REMAIN TRUE TO THE EARTH, and believe not those who speak unto you of superearthly hopes! Poisoners are they, whether they know it or not.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [95]
+  </div>
+  <div class="en">
+    [95]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [96] Họ là những kẻ khinh thường sự sống, những kẻ mục rỗng và bị đầu độc bởi chính họ, những kẻ mà mặt đất này đang mệt mỏi: bởi vậy hãy tống họ đi!
+  </div>
+  <div class="en">
+    [96] Despisers of life are they, decaying ones and poisoned ones themselves, of whom the earth is weary: so away with them!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [97]
+  </div>
+  <div class="en">
+    [97]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [98] Ngày xưa, báng bổ Chúa là sự báng bổ tồi tệ nhất; nhưng Chúa đã chết, và những kẻ báng bổ đó cũng đã chết theo. [???] Báng bổ mặt đất giờ đây là tội lỗi khủng khiếp nhất, và coi trọng trái tim của điều không thể biết hơn ý nghĩa của trái đất!
+  </div>
+  <div class="en">
+    [98] Once blasphemy against God was the greatest blasphemy; but God died, and therewith also those blasphemers. To blaspheme the earth is now the dreadfulest sin, and to rate the heart of the unknowable higher than the meaning of the earth!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [99]
+  </div>
+  <div class="en">
+    [99]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [100] [???] Đã có thời, linh hồn nhìn vào cơ thể một cách khinh thường, và rồi sự khinh thường đó trở thành điều tối thượng:—linh hồn mong muốn cơ thể trở nên gầy gò, ghê tởm và đói khát. Vì vậy, nó nghĩ rằng sẽ nó thoát ra khỏi cơ thể và mặt đất.
+  </div>
+  <div class="en">
+    [100] Once the soul looked contemptuously on the body, and then that contempt was the supreme thing:—the soul wished the body meagre, ghastly, and famished. Thus it thought to escape from the body and the earth.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [101]
+  </div>
+  <div class="en">
+    [101]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [102] Nhưng than ôi, chính bản thân cái linh hồn đó cũng gầy gò, ghê tởm và đói khát; và sự tàn ác lại là niềm vui của linh hồn đó!
+  </div>
+  <div class="en">
+    [102] Oh, that soul was itself meagre, ghastly, and famished; and cruelty was the delight of that soul!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [103]
+  </div>
+  <div class="en">
+    [103]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [104] Nhưng các anh em của ta ơi, hãy cho ta biết: Cơ thể của các ngươi nói gì về linh hồn của các ngươi? Linh hồn của các ngươi không phải là sự nghèo đói, sự ô uế và thói tự mãn khốn khổ hay sao?
+  </div>
+  <div class="en">
+    [104] But ye, also, my brethren, tell me: What doth your body say about your soul? Is your soul not poverty and pollution and wretched self-complacency?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [105]
+  </div>
+  <div class="en">
+    [105]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [106] Đúng vậy đó, con người chính là một con suối ô nhiễm. Nhưng con người cần phải là biển cả, để có thể tiếp nhận một dòng suối ô nhiễm mà không trở nên ô uế.
+  </div>
+  <div class="en">
+    [106] Verily, a polluted stream is man. One must be a sea, to receive a polluted stream without becoming impure.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [107]
+  </div>
+  <div class="en">
+    [107]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [108] Này, ta dạy cho các ngươi về Superman: anh ta chính là biển cả; trong anh ấy, những sự khinh miệt lớn lao của các ngươi sẽ bị nhấn chìm.
+  </div>
+  <div class="en">
+    [108] Lo, I teach you the Superman: he is that sea; in him can your great contempt be submerged.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [109]
+  </div>
+  <div class="en">
+    [109]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [110] Điều tuyệt vời nhất mà các ngươi có thể trải nghiệm là gì? Đó là thời khắc của sự khinh miệt lớn lao. Thời khắc mà ngay cả hạnh phúc của chính các ngươi cũng trở nên đáng ghét đối với các ngươi. Cả lý trí và đức hạnh của các ngươi cũng vậy.
+  </div>
+  <div class="en">
+    [110] What is the greatest thing ye can experience? It is the hour of great contempt. The hour in which even your happiness becometh loathsome unto you, and so also your reason and virtue.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [111]
+  </div>
+  <div class="en">
+    [111]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [112] Thời khắc mà các ngươi nói rằng: "Hạnh phúc của tôi có ích gì! Đó là sự nghèo đói, ô nhiễm và thói tự mãn khốn khổ. Nhưng hạnh phúc của tôi phải tự điều chỉnh cho sự tồn tại của chính nó!"
+  </div>
+  <div class="en">
+    [112] The hour when ye say: “What good is my happiness! It is poverty and pollution and wretched self-complacency. But my happiness should justify existence itself!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [113]
+  </div>
+  <div class="en">
+    [113]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [114] Thời khắc mà các ngươi nói rằng: "Lý trí của tôi có ích gì! Nó có khao khát kiến thức như sư tử khao khát con mồi không? Đó là sự nghèo đói, ô nhiễm và thói tự mãn khốn khổ!"
+  </div>
+  <div class="en">
+    [114] The hour when ye say: “What good is my reason! Doth it long for knowledge as the lion for his food? It is poverty and pollution and wretched self-complacency!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [115]
+  </div>
+  <div class="en">
+    [115]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [116] Thời khắc mà các ngươi nói rằng: "Đức hạnh của tôi có ích gì! Nó vẫn chưa khiến tôi đủ đam mê. Tôi mệt mỏi biết bao với những điều tốt và xấu của mình! Tất cả chỉ là sự nghèo đói, ô nhiễm và thói tự mãn khốn khổ!"
+  </div>
+  <div class="en">
+    [116] The hour when ye say: “What good is my virtue! As yet it hath not made me passionate. How weary I am of my good and my bad! It is all poverty and pollution and wretched self-complacency!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [117]
+  </div>
+  <div class="en">
+    [117]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [118] Thời khắc mà các ngươi nói rằng: "Công lý của tôi có ích gì! [???] Tôi không thấy rằng ta là nhiệt huyết và nhiên liệu. Tuy nhiên, người công chính là nhiệt huyết và nhiên liệu!"
+  </div>
+  <div class="en">
+    [118] The hour when ye say: “What good is my justice! I do not see that I am fervour and fuel. The just, however, are fervour and fuel!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [119]
+  </div>
+  <div class="en">
+    [119]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [120] Thời khắc mà các ngươi nói rằng: "Lòng từ bi của tôi có ích gì! Chẳng phải lòng từ bi là cây thập tự mà NGƯỜI YÊU CON NGƯỜI bị đóng đinh sao? Nhưng lòng từ bi của tôi không phải là việc đóng đinh."
+  </div>
+  <div class="en">
+    [120] The hour when ye say: “What good is my pity! Is not pity the cross on which he is nailed who loveth man? But my pity is not a crucifixion.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [121]
+  </div>
+  <div class="en">
+    [121]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [122] Các ngươi đã bao giờ nói như vậy chưa? Các ngươi đã bao giờ khóc như vậy chưa? Ồ! Giá mà ta nghe thấy các ngươi khóc như vậy!
+  </div>
+  <div class="en">
+    [122] Have ye ever spoken thus? Have ye ever cried thus? Ah! would that I had heard you crying thus!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [123]
+  </div>
+  <div class="en">
+    [123]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [124] Không phải tội lỗi của các ngươi—mà là lòng tự mãn của các ngươi mới là thứ kêu lên tận trời; sự tằn tiện trong việc phạm tội của các ngươi mới là thứ kêu lên tận trời!
+  </div>
+  <div class="en">
+    [124] It is not your sin—it is your self-satisfaction that crieth unto heaven; your very sparingness in sin crieth unto heaven!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [125]
+  </div>
+  <div class="en">
+    [125]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [126] Tia chớp liếm qua các ngươi bằng lưỡi của nó đâu rồi? Cơn điên cuồng mà các ngươi nên được phòng ngừa ở đâu rồi?
+  </div>
+  <div class="en">
+    [126] Where is the lightning to lick you with its tongue? Where is the frenzy with which ye should be inoculated?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [127]
+  </div>
+  <div class="en">
+    [127]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [128] Này, ta dạy cho các ngươi về Superman: anh ta chính là tia chớp đó, anh ta chính là cơn điên cuồng đó!—
+  </div>
+  <div class="en">
+    [128] Lo, I teach you the Superman: he is that lightning, he is that frenzy!—
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [129]
+  </div>
+  <div class="en">
+    [129]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [130] Khi Zarathustra nói như vậy, một người nào đó đã hét lên: "Giới thiệu về người đi dây vậy đủ rồi; cho anh ta ra đi!" Và tất cả mọi người cười Zarathustra. Người đi dây, người đang nghĩ rằng những diều này đang nói về mình, bắt đầu màn biểu diễn của mình.
+  </div>
+  <div class="en">
+    [130] When Zarathustra had thus spoken, one of the people called out: “We have now heard enough of the rope-dancer; it is time now for us to see him!” And all the people laughed at Zarathustra. But the rope-dancer, who thought the words applied to him, began his performance.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [131]
+  </div>
+  <div class="en">
+    [131]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [132] 4.
+  </div>
+  <div class="en">
+    [132] 4.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [133]
+  </div>
+  <div class="en">
+    [133]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [134] Nhưng, Zarathustra nhìn mọi người và ngạc nhiên. Sau đó, anh nói như thế này:
+  </div>
+  <div class="en">
+    [134] Zarathustra, however, looked at the people and wondered. Then he spake thus:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [135]
+  </div>
+  <div class="en">
+    [135]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [136] Con người là sợi dây căng giữa loài vật và Superman—một sợi dây bắc qua vực thẳm.
+  </div>
+  <div class="en">
+    [136] Man is a rope stretched between the animal and the Superman—a rope over an abyss.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [137]
+  </div>
+  <div class="en">
+    [137]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [138] [???] Một sự giao cắt nguy hiểm, một hành trình nguy hiểm, một sự ngoảnh lại nguy hiểm, một sự run rẩy và dừng lại nguy hiểm.
+  </div>
+  <div class="en">
+    [138] A dangerous crossing, a dangerous wayfaring, a dangerous looking-back, a dangerous trembling and halting.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [139]
+  </div>
+  <div class="en">
+    [139]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [140] Điều vĩ đại ở con người là anh ta là một cây cầu chứ không phải là một mục tiêu: điều đáng yêu ở con người là anh ta là một NGƯỜI VƯỢT-QUA và một NGƯỜI ĐI-XUỐNG.
+  </div>
+  <div class="en">
+    [140] What is great in man is that he is a bridge and not a goal: what is lovable in man is that he is an OVER-GOING and a DOWN-GOING.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [141]
+  </div>
+  <div class="en">
+    [141]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [142] Ta yêu những người không biết cách sống nào ngoại trừ việc là những người đi-xuống, vì anh ta chính là những người đi qua.
+  </div>
+  <div class="en">
+    [142] I love those that know not how to live except as down-goers, for they are the over-goers.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [143]
+  </div>
+  <div class="en">
+    [143]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [144] Ta yêu những kẻ báng bổ vĩ đại, vì họ là những người tôn thờ vĩ đại, và là mũi tên của nỗi khao khát hướng đến bờ bên kia.
+  </div>
+  <div class="en">
+    [144] I love the great despisers, because they are the great adorers, and arrows of longing for the other shore.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [145]
+  </div>
+  <div class="en">
+    [145]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [146] Ta yêu những người không tìm một lý do nào ở bên ngoài các vì sao để đi-xuống và trở thành vật hy sinh, mà hy sinh bản thân mình cho mặt đất, để mặt đất của Superman có thể xuất hiện sau này.
+  </div>
+  <div class="en">
+    [146] I love those who do not first seek a reason beyond the stars for going down and being sacrifices, but sacrifice themselves to the earth, that the earth of the Superman may hereafter arrive.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [147]
+  </div>
+  <div class="en">
+    [147]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [148] Ta yêu người sống để biết, và tìm kiếm sự hiểu biết để Superman có thể sống sau này. Vì vậy, anh ta tìm kiếm sự đi-xuống của chính mình.
+  </div>
+  <div class="en">
+    [148] I love him who liveth in order to know, and seeketh to know in order that the Superman may hereafter live. Thus seeketh he his own down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [149]
+  </div>
+  <div class="en">
+    [149]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [150] Ta yêu người lao động và sáng tạo, để anh ta có thể xây dựng ngôi nhà cho Superman, và chuẩn bị đất đai, động vật và thực vật cho Superman: vì anh ta tìm kiếm sự đi-xuống của chính mình.
+  </div>
+  <div class="en">
+    [150] I love him who laboureth and inventeth, that he may build the house for the Superman, and prepare for him earth, animal, and plant: for thus seeketh he his own down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [151]
+  </div>
+  <div class="en">
+    [151]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [152] Ta yêu người yêu đức hạnh của mình: vì đức hạnh là ý chí muốn đi-xuống và là mũi tên của khát khao.
+  </div>
+  <div class="en">
+    [152] I love him who loveth his virtue: for virtue is the will to down-going, and an arrow of longing.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [153]
+  </div>
+  <div class="en">
+    [153]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [154] Ta yêu người không dành phần tinh thần nào cho riêng mình, mà muốn hoàn toàn là tinh thần của đức hạnh của chính mình: do đó, anh ta bước qua cây cầu như một thiên sứ.
+  </div>
+  <div class="en">
+    [154] I love him who reserveth no share of spirit for himself, but wanteth to be wholly the spirit of his virtue: thus walketh he as spirit over the bridge.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [155]
+  </div>
+  <div class="en">
+    [155]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [156] Ta yêu người biến đức hạnh của mình thành lẽ sống và số phận của mình: vì vậy, anh ta sẵn sàng sống tiếp hoặc hy sinh vì đức hạnh của mình.
+  </div>
+  <div class="en">
+    [156] I love him who maketh his virtue his inclination and destiny: thus, for the sake of his virtue, he is willing to live on, or live no more.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [157]
+  </div>
+  <div class="en">
+    [157]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [158] Ta yêu người không mong muốn quá nhiều đức hạnh. Một đức hạnh có giá trị hơn hai đức hạnh, vì nó giống như cái móc để số phận của một người treo vào.
+  </div>
+  <div class="en">
+    [158] I love him who desireth not too many virtues. One virtue is more of a virtue than two, because it is more of a knot for one’s destiny to cling to.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [159]
+  </div>
+  <div class="en">
+    [159]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [160] Ta yêu người có tâm hồn hào phóng, không muốn được cảm ơn và không trả lại: vì anh ta luôn ban tặng và không muốn giữ lại cho riêng mình.
+  </div>
+  <div class="en">
+    [160] I love him whose soul is lavish, who wanteth no thanks and doth not give back: for he always bestoweth, and desireth not to keep for himself.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [161]
+  </div>
+  <div class="en">
+    [161]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [162] Ta yêu người cảm thấy xấu hổ khi con xúc xắc rơi vào mặt có lợi cho mình, và rồi tự hỏi: "Ta có phải là một người gian dối không?"—vì anh ta sẵn sàng từ chối.
+  </div>
+  <div class="en">
+    [162] I love him who is ashamed when the dice fall in his favour, and who then asketh: “Am I a dishonest player?”—for he is willing to succumb.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [163]
+  </div>
+  <div class="en">
+    [163]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [164] Ta yêu người nói những lời tốt đẹp trước khi làm việc, và luôn làm nhiều hơn những gì mình hứa: vì anh ta tìm kiếm sự đi-xuống của chính mình.
+  </div>
+  <div class="en">
+    [164] I love him who scattereth golden words in advance of his deeds, and always doeth more than he promiseth: for he seeketh his own down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [165]
+  </div>
+  <div class="en">
+    [165]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [166] [???] Ta yêu người biện minh cho những điều tương lai và cứu chuộc những điều trong quá khứ: vì họ sẵn sàng đầu hàng qua những điều hiện tại.
+  </div>
+  <div class="en">
+    [166] I love him who justifieth the future ones, and redeemeth the past ones: for he is willing to succumb through the present ones.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [167]
+  </div>
+  <div class="en">
+    [167]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [168] [???] Ta yêu người trừng phạt Chúa của mình, vì anh ta yêu Chúa của mình: vì anh ta phải khuất phục trước cơn thịnh nộ của Chúa của anh ta.
+  </div>
+  <div class="en">
+    [168] I love him who chasteneth his God, because he loveth his God: for he must succumb through the wrath of his God.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [169]
+  </div>
+  <div class="en">
+    [169]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [170] [???] Ta yêu người có tâm hồn sâu thẳm ngay cả trong vết thương, và có thể đầu hàng qua một vấn đề nhỏ: vì vậy họ sẵn sàng vượt qua cây cầu.
+  </div>
+  <div class="en">
+    [170] I love him whose soul is deep even in the wounding, and may succumb through a small matter: thus goeth he willingly over the bridge.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [171]
+  </div>
+  <div class="en">
+    [171]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [172] [???] Ta yêu người có tâm hồn quá đầy đủ đến nỗi anh ta quên mất bản thân mình, và mọi thứ đều ở trong anh ta: vì vậy mọi thứ trở thành sự sụp đổ của họ.
+  </div>
+  <div class="en">
+    [172] I love him whose soul is so overfull that he forgetteth himself, and all things are in him: thus all things become his down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [173]
+  </div>
+  <div class="en">
+    [173]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [174] [???] Ta yêu người có tinh thần tự do và trái tim tự do: vì vậy đầu óc anh ta chỉ là ruột gan của trái tim; tuy nhiên, trái tim anh ta gây ra sự đi-xuống của anh ta.
+  </div>
+  <div class="en">
+    [174] I love him who is of a free spirit and a free heart: thus is his head only the bowels of his heart; his heart, however, causeth his down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [175]
+  </div>
+  <div class="en">
+    [175]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [176] Ta yêu tất cả những ai giống như những giọt nước rơi từng giọt từng giọt một từ đám mây đen phủ xuống con người: họ báo hiệu sự xuất hiện của tia chớp, và hạnh phúc với việc là sứ giả của tia chớp.
+  </div>
+  <div class="en">
+    [176] I love all who are like heavy drops falling one by one out of the dark cloud that lowereth over man: they herald the coming of the lightning, and succumb as heralds.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [177]
+  </div>
+  <div class="en">
+    [177]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [178] Này, ta là sứ giả của tia chớp, là một giọt nước rơi ra từ đám mây: nhưng tia chớp là Superman.—
+  </div>
+  <div class="en">
+    [178] Lo, I am a herald of the lightning, and a heavy drop out of the cloud: the lightning, however, is the SUPERMAN.—
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [179]
+  </div>
+  <div class="en">
+    [179]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [180] 5.
+  </div>
+  <div class="en">
+    [180] 5.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [181]
+  </div>
+  <div class="en">
+    [181]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [182] Khi Zarathustra nói xong những lời này, anh lại nhìn mọi người và im lặng. “Họ đứng đó,” anh tự nhủ; “họ cười ở đó: họ không hiểu ta; ta không phải là cái miệng cho những đôi tai này.
+  </div>
+  <div class="en">
+    [182] When Zarathustra had spoken these words, he again looked at the people, and was silent. “There they stand,” said he to his heart; “there they laugh: they understand me not; I am not the mouth for these ears.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [183]
+  </div>
+  <div class="en">
+    [183]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [184] Phải chăng ta phải đập vào tai họ trước để họ có thể học cách nghe bằng mắt? Phải chăng ta phải kêu như trống, như những người đọc kinh sám hối? Hay họ chỉ tin vào người nói lắp?
+  </div>
+  <div class="en">
+    [184] Must one first batter their ears, that they may learn to hear with their eyes? Must one clatter like kettledrums and penitential preachers? Or do they only believe the stammerer?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [185]
+  </div>
+  <div class="en">
+    [185]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [186] Họ có một thứ gì đó khiến họ tự hào. Họ gọi nó là gì, thứ khiến họ tự hào? Họ gọi đó là văn hóa; nó phân biệt họ với những người chăn dê.
+  </div>
+  <div class="en">
+    [186] They have something whereof they are proud. What do they call it, that which maketh them proud? Culture, they call it; it distinguisheth them from the goatherds.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [187]
+  </div>
+  <div class="en">
+    [187]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [188] Do đó, họ không thích nghe nói đến ‘sự khinh miệt’ bản thân. Vì vậy, ta sẽ tôn lên lòng kiêu hãnh của họ.
+  </div>
+  <div class="en">
+    [188] They dislike, therefore, to hear of ‘contempt’ of themselves. So I will appeal to their pride.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [189]
+  </div>
+  <div class="en">
+    [189]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [190] Ta sẽ nói với họ về điều đáng khinh bỉ nhất: CON-NGƯỜI-CUỐI-CÙNG!”
+  </div>
+  <div class="en">
+    [190] I will speak unto them of the most contemptible thing: that, however, is THE LAST MAN!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [191]
+  </div>
+  <div class="en">
+    [191]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [192] Và Zarathustra đã nói với mọi người như thế này:
+  </div>
+  <div class="en">
+    [192] And thus spake Zarathustra unto the people:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [193]
+  </div>
+  <div class="en">
+    [193]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [194] Đã đến lúc con người phải xác định mục tiêu của mình. Đã đến lúc con người phải gieo hạt mầm hy vọng cao nhất của mình.
+  </div>
+  <div class="en">
+    [194] It is time for man to fix his goal. It is time for man to plant the germ of his highest hope.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [195]
+  </div>
+  <div class="en">
+    [195]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [196] Đất đai của con người vẫn đủ màu mỡ cho việc đó. Nhưng một ngày nào đó, đất đai đó sẽ trở nên cằn cỗi và kiệt quệ, và không một cây cao nào có thể mọc lên trên đó nữa.
+  </div>
+  <div class="en">
+    [196] Still is his soil rich enough for it. But that soil will one day be poor and exhausted, and no lofty tree will any longer be able to grow thereon.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [197]
+  </div>
+  <div class="en">
+    [197]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [198] Than ôi! Sẽ đến lúc con người không còn bắn mũi tên của khát vọng vượt qua con người nữa—và dây cung của họ sẽ không còn học được cách rít lên nữa!
+  </div>
+  <div class="en">
+    [198] Alas! there cometh the time when man will no longer launch the arrow of his longing beyond man—and the string of his bow will have unlearned to whizz!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [199]
+  </div>
+  <div class="en">
+    [199]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [200] Ta nói với các ngươi: người ta vẫn phải có hỗn loạn trong mình, để sinh ra một ngôi sao biết nhảy múa. Ta nói với các ngươi: các ngươi vẫn còn hỗn loạn trong mình.
+  </div>
+  <div class="en">
+    [200] I tell you: one must still have chaos in one, to give birth to a dancing star. I tell you: ye have still chaos in you.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [201]
+  </div>
+  <div class="en">
+    [201]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [202] Than ôi! Sẽ đến lúc con người không còn sinh ra bất kỳ ngôi sao nào nữa. Than ôi! Sẽ đến thời điểm của con người đáng khinh bỉ nhất, kẻ không còn có thể khinh thường chính mình nữa.
+  </div>
+  <div class="en">
+    [202] Alas! There cometh the time when man will no longer give birth to any star. Alas! There cometh the time of the most despicable man, who can no longer despise himself.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [203]
+  </div>
+  <div class="en">
+    [203]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [204] Này! Ta sẽ cho các ngươi thấy CON-NGƯỜI-CUỐI-CÙNG.
+  </div>
+  <div class="en">
+    [204] Lo! I show you THE LAST MAN.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [205]
+  </div>
+  <div class="en">
+    [205]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [206] “Tình yêu là gì? Sáng tạo là gì? Khao khát là gì? Ngôi sao là gì?”—con-người-cuối-cùng hỏi vậy và chớp mắt.
+  </div>
+  <div class="en">
+    [206] “What is love? What is creation? What is longing? What is a star?”—so asketh the last man and blinketh.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [207]
+  </div>
+  <div class="en">
+    [207]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [208] Khi đó, trái đất đã trở nên nhỏ bé, và trên đó, con-người-cuối-cùng nhảy múa, người làm cho mọi thứ trở nên nhỏ bé. Giống loài của anh ta không thể xóa sổ, giống như loài bọ chét trên mặt đất; con-người-cuối-cùng sống lâu nhất.
+  </div>
+  <div class="en">
+    [208] The earth hath then become small, and on it there hoppeth the last man who maketh everything small. His species is ineradicable like that of the ground-flea; the last man liveth longest.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [209]
+  </div>
+  <div class="en">
+    [209]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [210] “Chúng ta đã tìm thấy hạnh phúc”—những con-người-cuối-cùng nói, và chớp mắt.
+  </div>
+  <div class="en">
+    [210] “We have discovered happiness”—say the last men, and blink thereby.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [211]
+  </div>
+  <div class="en">
+    [211]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [212] Họ đã rời khỏi những vùng đất khó sống; vì họ cần hơi ấm. Người ta vẫn yêu người hàng xóm của mình và cọ xát vào người đó; vì người ta cần hơi ấm.
+  </div>
+  <div class="en">
+    [212] They have left the regions where it is hard to live; for they need warmth. One still loveth one’s neighbour and rubbeth against him; for one needeth warmth.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [213]
+  </div>
+  <div class="en">
+    [213]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [214] Khi trở nên ốm yếu và ngờ vực, họ coi là có tội: họ bước đi thận trọng. họ vẫn là kẻ ngốc vẫn vấp phải đá hay người!
+  </div>
+  <div class="en">
+    [214] Turning ill and being distrustful, they consider sinful: they walk warily. He is a fool who still stumbleth over stones or men!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [215]
+  </div>
+  <div class="en">
+    [215]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [216] Thỉnh thoảng có một chút thuốc độc: tạo ra những giấc mơ dễ chịu. Và cuối cùng là nhiều thuốc độc để có cái chết dễ chịu.
+  </div>
+  <div class="en">
+    [216] A little poison now and then: that maketh pleasant dreams. And much poison at last for a pleasant death.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [217]
+  </div>
+  <div class="en">
+    [217]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [218] Người ta vẫn làm việc, vì công việc là trò tiêu khiển. Nhưng người ta cẩn thận kẻo trò tiêu khiển làm hại mình.
+  </div>
+  <div class="en">
+    [218] One still worketh, for work is a pastime. But one is careful lest the pastime should hurt one.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [219]
+  </div>
+  <div class="en">
+    [219]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [220] Người ta không còn trở nên nghèo hay giàu nữa; cả hai đều quá nặng nề. Ai còn muốn cai trị? Ai còn muốn đi theo? Cả hai đều quá nặng nề.
+  </div>
+  <div class="en">
+    [220] One no longer becometh poor or rich; both are too burdensome. Who still wanteth to rule? Who still wanteth to obey? Both are too burdensome.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [221]
+  </div>
+  <div class="en">
+    [221]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [222] Không có người chăn cừu, mà chỉ còn một bầy cừu! Mọi người đều muốn như nhau; mọi người đều bình đẳng: người có suy nghĩ khác sẽ tự nguyện vào nhà thương điên.
+  </div>
+  <div class="en">
+    [222] No shepherd, and one herd! Every one wanteth the same; every one is equal: he who hath other sentiments goeth voluntarily into the madhouse.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [223]
+  </div>
+  <div class="en">
+    [223]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [224] “Trước đây, cả thế giới đều điên rồ,”—những người tinh tế nhất trong số họ nói, và chớp mắt.
+  </div>
+  <div class="en">
+    [224] “Formerly all the world was insane,”—say the subtlest of them, and blink thereby.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [225]
+  </div>
+  <div class="en">
+    [225]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [226] Họ thông minh và biết tất cả những gì đã xảy ra: vì vậy không có hồi kết cho lời giểu cợt của họ. Mọi người vẫn cãi nhau, nhưng sớm hòa giải - nếu không thì dạ dày của họ sẽ bị hỏng.
+  </div>
+  <div class="en">
+    [226] They are clever and know all that hath happened: so there is no end to their raillery. People still fall out, but are soon reconciled—otherwise it spoileth their stomachs.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [227]
+  </div>
+  <div class="en">
+    [227]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [228] Họ có những thú vui nhỏ vào ban ngày và những thú vui nhỏ vào ban đêm, nhưng họ coi trọng sức khỏe.
+  </div>
+  <div class="en">
+    [228] They have their little pleasures for the day, and their little pleasures for the night, but they have a regard for health.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [229]
+  </div>
+  <div class="en">
+    [229]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [230] "Chúng tôi đã tìm thấy hạnh phúc", - những con-người-cuối-cùng nói, và chớp mắt. -
+  </div>
+  <div class="en">
+    [230] “We have discovered happiness,”—say the last men, and blink thereby.—
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [231]
+  </div>
+  <div class="en">
+    [231]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [232] Và đây là kết thúc bài thuyết giáo đầu tiên của Zarathustra, cũng được gọi là "Lời mở đầu": vì tại thời điểm này, tiếng la hét và tiếng cười của đám đông đã ngắt lời anh. "Hãy cho chúng tôi con-người-cuối-cùng cùng này, hỡi Zarathustra", - họ kêu lên - "biến chúng tôi thành những con-người-cuối-cùng này! Khi đó chúng tôi sẽ tặng bạn một món quà là Superman!" Và tất cả mọi người đều hân-hoan và chép miệng. Tuy nhiên, Zarathustra trở nên buồn bã và tự nhủ:
+  </div>
+  <div class="en">
+    [232] And here ended the first discourse of Zarathustra, which is also called “The Prologue”: for at this point the shouting and mirth of the multitude interrupted him. “Give us this last man, O Zarathustra,”—they called out—“make us into these last men! Then will we make thee a present of the Superman!” And all the people exulted and smacked their lips. Zarathustra, however, turned sad, and said to his heart:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [233]
+  </div>
+  <div class="en">
+    [233]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [234] "Họ không hiểu ta: Ta không phải là cái miệng dành cho những đôi tai này.
+  </div>
+  <div class="en">
+    [234] “They understand me not: I am not the mouth for these ears.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [235]
+  </div>
+  <div class="en">
+    [235]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [236] Có lẽ ta đã sống trên núi quá lâu; Ta đã quá chú ý đến những dòng suối và cây cối: giờ đây ta nói với họ như nói với những người chăn dê.
+  </div>
+  <div class="en">
+    [236] Too long, perhaps, have I lived in the mountains; too much have I hearkened unto the brooks and trees: now do I speak unto them as unto the goatherds.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [237]
+  </div>
+  <div class="en">
+    [237]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [238] Tâm hồn ta bình thản, và trong sáng, như những ngọn núi vào buổi sáng. Nhưng họ nghĩ ta lạnh lùng, và là một kẻ chế giễu với những trò đùa khủng khiếp.
+  </div>
+  <div class="en">
+    [238] Calm is my soul, and clear, like the mountains in the morning. But they think me cold, and a mocker with terrible jests.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [239]
+  </div>
+  <div class="en">
+    [239]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [240] Và giờ đây họ nhìn ta và cười: và trong khi họ cười, họ cũng ghét ta. Có băng giá trong tiếng cười của họ.”
+  </div>
+  <div class="en">
+    [240] And now do they look at me and laugh: and while they laugh they hate me too. There is ice in their laughter.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [241]
+  </div>
+  <div class="en">
+    [241]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [242] 6.
+  </div>
+  <div class="en">
+    [242] 6.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [243]
+  </div>
+  <div class="en">
+    [243]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [244] Tuy nhiên, sau đó, một chuyện đã xảy ra khiến mọi cái miệng đều câm lặng và mọi con mắt đều tập trung. Khi đó, tất nhiên, người đi dây đã bắt đầu màn biểu diễn của mình: anh ta đã đi ra một cánh cửa nhỏ, và đang đi dọc theo sợi dây được căng giữa hai tòa tháp, sợi dây treo lơ lửng giữa chợ phía trên mọi người. Khi anh ta vừa đi được nửa đường, cánh cửa nhỏ mở ra một lần nữa, và một anh chàng ăn mặc lòe loẹt giống như một chú hề nhảy ra, và nhanh chóng đi theo người đầu tiên. "Tiến lên, đồ chân khập khiễng", giọng nói đáng sợ của anh ta hét lên, "tiến lên, đồ lười biếng, kẻ chen ngang, mặt vàng vọt! - kẻo ta cù lét mi bằng gót chân của ta! Mi làm gì ở đây giữa các tòa tháp? Trong tòa tháp là nơi dành cho mi, mi nên bị nhốt; mi đang cản đường một người giỏi hơn mình!" - Và với mỗi lời anh ta lại tiến gần hơn và gần hơn đến người đầu tiên. Tuy nhiên, khi chỉ còn cách một bước, một điều kinh hoàng đã xảy ra khiến mọi cái miệng đều câm lặng và mọi con mắt đều đờ đẫn - anh ta hét lên như một con quỷ, và nhảy qua người đang cản đường mình. Tuy nhiên, khi nhìn thấy chiến thắng của mình, anh ta đã lỡ mất đầu và chân trên sợi dây thừng; anh ta ném cây sào của mình đi và lao xuống còn nhanh hơn nó, giống như một cơn lốc của tay và chân, lao xuống vực sâu. Khu chợ người giống như mặt biển khi cơn bão ập đến: tất cả đều lao ra xa và hỗn loạn, đặc biệt là nơi cái thân hình kia đang rơi xuống.
+  </div>
+  <div class="en">
+    [244] Then, however, something happened which made every mouth mute and every eye fixed. In the meantime, of course, the rope-dancer had commenced his performance: he had come out at a little door, and was going along the rope which was stretched between two towers, so that it hung above the market-place and the people. When he was just midway across, the little door opened once more, and a gaudily-dressed fellow like a buffoon sprang out, and went rapidly after the first one. “Go on, halt-foot,” cried his frightful voice, “go on, lazy-bones, interloper, sallow-face!—lest I tickle thee with my heel! What dost thou here between the towers? In the tower is the place for thee, thou shouldst be locked up; to one better than thyself thou blockest the way!”—And with every word he came nearer and nearer the first one. When, however, he was but a step behind, there happened the frightful thing which made every mouth mute and every eye fixed—he uttered a yell like a devil, and jumped over the other who was in his way. The latter, however, when he thus saw his rival triumph, lost at the same time his head and his footing on the rope; he threw his pole away, and shot downwards faster than it, like an eddy of arms and legs, into the depth. The market-place and the people were like the sea when the storm cometh on: they all flew apart and in disorder, especially where the body was about to fall.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [245]
+  </div>
+  <div class="en">
+    [245]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [246] Tuy nhiên, Zarathustra vẫn đứng đó, và ngay bên cạnh anh, cái thân hình kia bị thương nặng và biến dạng, nhưng vẫn chưa chết. Sau một lúc, ý thức trở lại với con người đang bị thương, và anh ta thấy Zarathustra đang quỳ bên cạnh mình. "Ngươi đang làm gì ở đó?" cuối cùng anh ta nói, "Tôi đã biết từ lâu rằng quỷ dữ sẽ làm tôi vấp ngã. Bây giờ nó đang lôi tôi xuống địa ngục: ngươi sẽ ngăn cản nó chứ?"
+  </div>
+  <div class="en">
+    [246] Zarathustra, however, remained standing, and just beside him fell the body, badly injured and disfigured, but not yet dead. After a while consciousness returned to the shattered man, and he saw Zarathustra kneeling beside him. “What art thou doing there?” said he at last, “I knew long ago that the devil would trip me up. Now he draggeth me to hell: wilt thou prevent him?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [247]
+  </div>
+  <div class="en">
+    [247]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [248] “Xin thề với danh dự của tôi, bạn tôi ơi,” Zarathustra trả lời, “chẳng có gì trong những điều anh nói cả: chẳng có ma quỷ hay địa ngục. Linh hồn anh sẽ chết sớm hơn cả thể xác anh: nên đừng sợ nữa!”
+  </div>
+  <div class="en">
+    [248] “On mine honour, my friend,” answered Zarathustra, “there is nothing of all that whereof thou speakest: there is no devil and no hell. Thy soul will be dead even sooner than thy body: fear, therefore, nothing any more!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [249]
+  </div>
+  <div class="en">
+    [249]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [250] Người đàn ông nhìn lên nghi ngờ. “Nếu ngươi nói sự thật,” anh ta nói, “tôi chẳng mất gì khi mất mạng. Tôi chẳng hơn gì một con vật được dạy nhảy múa bằng những cú đánh và một ít thức ăn.”
+  </div>
+  <div class="en">
+    [250] The man looked up distrustfully. “If thou speakest the truth,” said he, “I lose nothing when I lose my life. I am not much more than an animal which hath been taught to dance by blows and scanty fare.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [251]
+  </div>
+  <div class="en">
+    [251]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [252] “Không hề,” Zarathustra nói, “anh đã biến nguy hiểm thành nghề của mình; việc đó chẳng có gì đáng khinh cả. Giờ thì anh sẽ chết vì nghề của mình: vậy nên tôi sẽ chôn anh bằng chính đôi tay của mình.”
+  </div>
+  <div class="en">
+    [252] “Not at all,” said Zarathustra, “thou hast made danger thy calling; therein there is nothing contemptible. Now thou perishest by thy calling: therefore will I bury thee with mine own hands.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [253]
+  </div>
+  <div class="en">
+    [253]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [254] Khi Zarathustra nói vậy, người hấp hối không trả lời thêm nữa; nhưng anh ta đưa tay ra như thể anh ta đang tìm kiếm bàn tay của Zarathustra để tỏ lòng biết ơn.
+  </div>
+  <div class="en">
+    [254] When Zarathustra had said this the dying one did not reply further; but he moved his hand as if he sought the hand of Zarathustra in gratitude.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [255]
+  </div>
+  <div class="en">
+    [255]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [256] 7.
+  </div>
+  <div class="en">
+    [256] 7.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [257]
+  </div>
+  <div class="en">
+    [257]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [258] Lúc đó, buổi tối đã đến, và khu chợ chìm trong bóng tối. Sau đó, mọi người tản ra, vì ngay cả sự tò mò và sợ hãi cũng trở nên mệt mỏi. Tuy nhiên, Zarathustra vẫn ngồi bên người chết trên mặt đất, đắm chìm trong suy nghĩ: vì vậy anh ta quên mất thời gian. Nhưng cuối cùng trời đã tối, và một cơn gió lạnh thổi qua con người cô đơn. Sau đó, Zarathustra đứng dậy và tự nhủ:
+  </div>
+  <div class="en">
+    [258] Meanwhile the evening came on, and the market-place veiled itself in gloom. Then the people dispersed, for even curiosity and terror become fatigued. Zarathustra, however, still sat beside the dead man on the ground, absorbed in thought: so he forgot the time. But at last it became night, and a cold wind blew upon the lonely one. Then arose Zarathustra and said to his heart:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [259]
+  </div>
+  <div class="en">
+    [259]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [260] Quả thật, hôm nay Zarathustra đã bắt được một mẻ cá tuyệt vời! Anh ta không bắt được một con người, mà là một xác chết.
+  </div>
+  <div class="en">
+    [260] Verily, a fine catch of fish hath Zarathustra made to-day! It is not a man he hath caught, but a corpse.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [261]
+  </div>
+  <div class="en">
+    [261]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [262] Cuộc sống con người thật u ám, và vô nghĩa: có thể định mệnh của anh ta là trở thành một gã hề.
+  </div>
+  <div class="en">
+    [262] Sombre is human life, and as yet without meaning: a buffoon may be fateful to it.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [263]
+  </div>
+  <div class="en">
+    [263]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [264] Ta muốn dạy cho con người ý nghĩa của sự tồn tại của họ, đó là Superman, tia chớp từ đám mây đen—con người.
+  </div>
+  <div class="en">
+    [264] I want to teach men the sense of their existence, which is the Superman, the lightning out of the dark cloud—man.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [265]
+  </div>
+  <div class="en">
+    [265]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [266] [paused_jan31]Nhưng ta vẫn còn xa cách họ, và ý thức của ta không [???]kết nối với ý thức của họ. Đối với mọi người, ta vẫn là một thứ gì đó giữa một kẻ ngốc và một xác chết.
+  </div>
+  <div class="en">
+    [266] But still am I far from them, and my sense speaketh not unto their sense. To men I am still something between a fool and a corpse.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [267]
+  </div>
+  <div class="en">
+    [267]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [268] Đêm thật u ám, con đường của Zarathustra thật u ám. Đến đây, người bạn đồng hành lạnh lùng và cứng nhắc kia! Ta sẽ mang anh đến nơi mà chính tay ta sẽ chôn anh.
+  </div>
+  <div class="en">
+    [268] Gloomy is the night, gloomy are the ways of Zarathustra. Come, thou cold and stiff companion! I carry thee to the place where I shall bury thee with mine own hands.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [269]
+  </div>
+  <div class="en">
+    [269]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [270] 8.
+  </div>
+  <div class="en">
+    [270] 8.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [271]
+  </div>
+  <div class="en">
+    [271]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [272] Khi Zarathustra tự nhủ điều này, anh đặt xác chết lên vai và lên đường. Nhưng khi anh chưa đi được một trăm bước, thì có một người đã lẻn đến bên anh và thì thầm vào tai anh—và kìa! đó chính là gã hề trên tháp. “Hãy rời khỏi thị trấn này, hỡi Zarathustra,” gã nói, “có quá nhiều người ở đây ghét ngươi. Những người tốt và công bằng ghét ngươi, và gọi ngươi là kẻ thù đáng khinh miệt của họ; những tín đồ của đức tin chính thống ghét ngươi, và gọi ngươi là mối nguy hiểm cho đám đông. Ngươi thật may mắn khi bị chế giễu: và ngươi thực sự đã nói như một gã hề. Ngươi thật may mắn khi giao du với con chó chết; bằng cách hạ mình như vậy, ngươi đã cứu mạng mình hôm nay. Tuy nhiên, hãy rời khỏi thị trấn này,—hoặc ngày mai ta sẽ nhảy qua ngươi, một người sống nhảy qua một người chết.” Và khi nói xong, gã hề biến mất; Tuy nhiên, Zarathustra vẫn tiếp tục đi qua những con phố tối tăm.
+  </div>
+  <div class="en">
+    [272] When Zarathustra had said this to his heart, he put the corpse upon his shoulders and set out on his way. Yet had he not gone a hundred steps, when there stole a man up to him and whispered in his ear—and lo! he that spake was the buffoon from the tower. “Leave this town, O Zarathustra,” said he, “there are too many here who hate thee. The good and just hate thee, and call thee their enemy and despiser; the believers in the orthodox belief hate thee, and call thee a danger to the multitude. It was thy good fortune to be laughed at: and verily thou spakest like a buffoon. It was thy good fortune to associate with the dead dog; by so humiliating thyself thou hast saved thy life to-day. Depart, however, from this town,—or to-morrow I shall jump over thee, a living man over a dead one.” And when he had said this, the buffoon vanished; Zarathustra, however, went on through the dark streets.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [273]
+  </div>
+  <div class="en">
+    [273]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [274] Tại cổng thị trấn, những người đào huyệt gặp anh: họ rọi đèn vào mặt anh, và nhận ra Zarathustra, họ chế nhạo anh một cách cay độc. “Zarathustra đang mang con chó chết đi: thật tuyệt khi Zarathustra biến thành một tay đào huyệt! Tay của chúng ta quá sạch sẽ để làm món thịt nướng đó. Zarathustra có ăn cắp miếng thịt từ quỷ dữ không? Chúc bữa tối may mắn! [???] Giá như quỷ dữ không phải là một tên trộm giỏi hơn Zarathustra!—[đêm nay] nó sẽ ăn cắp cả hai, nó sẽ ăn cả hai!”  Và họ chụm đầu lại cười với nhau.
+  </div>
+  <div class="en">
+    [274] At the gate of the town the grave-diggers met him: they shone their torch on his face, and, recognising Zarathustra, they sorely derided him. “Zarathustra is carrying away the dead dog: a fine thing that Zarathustra hath turned a grave-digger! For our hands are too cleanly for that roast. Will Zarathustra steal the bite from the devil? Well then, good luck to the repast! If only the devil is not a better thief than Zarathustra!—he will steal them both, he will eat them both!” And they laughed among themselves, and put their heads together.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [275]
+  </div>
+  <div class="en">
+    [275]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [276] Zarathustra không trả lời, nhưng vẫn tiếp tục đi. Khi đã đi được hai giờ, qua những khu rừng và đầm lầy, anh nghe rất nhiều tiếng hú đói của bầy sói, và bản thân anh cũng đã đói. Vì vậy, anh dừng lại ở một ngôi nhà vắng vẻ, bên trong có một ngọn đèn đang cháy.
+  </div>
+  <div class="en">
+    [276] Zarathustra made no answer thereto, but went on his way. When he had gone on for two hours, past forests and swamps, he had heard too much of the hungry howling of the wolves, and he himself became a-hungry. So he halted at a lonely house in which a light was burning.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [277]
+  </div>
+  <div class="en">
+    [277]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [278] “Cơn đói tấn công ta,” Zarathustra nói, “như một tên cướp. Giữa những cánh rừng và đầm lầy, cơn đói của ta lại tấn công ta, và vào giữa đêm khuya.
+  </div>
+  <div class="en">
+    [278] “Hunger attacketh me,” said Zarathustra, “like a robber. Among forests and swamps my hunger attacketh me, and late in the night.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [279]
+  </div>
+  <div class="en">
+    [279]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [280] “Cơn đói của ta đi kèm những cơn buồn nôn lạ lùng. Thường thì nó chỉ đến với ta sau bữa ăn, và cả ngày nó không đến: nó đã ở đâu?”
+  </div>
+  <div class="en">
+    [280] “Strange humours hath my hunger. Often it cometh to me only after a repast, and all day it hath failed to come: where hath it been?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [281]
+  </div>
+  <div class="en">
+    [281]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [282] Và sau đó Zarathustra gõ cửa nhà. Một ông già xuất hiện, cầm theo một ngọn đèn, và hỏi: “Ai đến với tôi và giấc ngủ tồi tệ của tôi?”
+  </div>
+  <div class="en">
+    [282] And thereupon Zarathustra knocked at the door of the house. An old man appeared, who carried a light, and asked: “Who cometh unto me and my bad sleep?”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [283]
+  </div>
+  <div class="en">
+    [283]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [284] “Một người sống và một người chết,” Zarathustra nói. “Cho tôi thứ gì đó để ăn và uống, tôi đã quên ăn uống suốt ngày hôm nay. Người cho người đói ăn sẽ làm tươi mới tâm hồn mình, những người khôn ngoan nói vậy.”
+  </div>
+  <div class="en">
+    [284] “A living man and a dead one,” said Zarathustra. “Give me something to eat and drink, I forgot it during the day. He that feedeth the hungry refresheth his own soul, saith wisdom.”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [285]
+  </div>
+  <div class="en">
+    [285]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [286] Ông già lui vào, nhưng quay lại ngay lập tức và đưa cho Zarathustra bánh mì và rượu vang. “Một vùng đất tồi tệ đối với người đói,” ông nói; “đó là lý do tại sao tôi sống ở đây. Động vật và con người đến với tôi, ẩn sĩ. Nhưng hãy bảo bạn đồng hành của anh cũng ăn và uống, anh ta mệt hơn anh.” Zarathustra trả lời: “Bạn đồng hành của tôi đã chết; tôi khó có thể thuyết phục anh ta ăn.” “Điều đó không liên quan đến tôi,” ông già nói một cách buồn bã; người nào gõ cửa nhà tôi phải nhận những gì tôi cho. Ăn đi, và chúc anh may mắn!”—
+  </div>
+  <div class="en">
+    [286] The old man withdrew, but came back immediately and offered Zarathustra bread and wine. “A bad country for the hungry,” said he; “that is why I live here. Animal and man come unto me, the anchorite. But bid thy companion eat and drink also, he is wearier than thou.” Zarathustra answered: “My companion is dead; I shall hardly be able to persuade him to eat.” “That doth not concern me,” said the old man sullenly; “he that knocketh at my door must take what I offer him. Eat, and fare ye well!”—
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [287]
+  </div>
+  <div class="en">
+    [287]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [288] Sau đó, Zarathustra lại đi tiếp trong hai giờ, tin tưởng vào con đường và ánh sáng của các vì sao: vì anh là một người đi đêm lão luyện, và thích nhìn vào khuôn mặt của tất cả những ai đang ngủ. Tuy nhiên, khi bình minh ló dạng, Zarathustra thấy mình đang ở trong một khu rừng rậm rạp, và không còn thấy lối đi nào nữa. Sau đó, anh đặt người chết vào một cái cây rỗng ở trên đầu—vì anh muốn bảo vệ người chết khỏi bầy sói—và nằm xuống mặt đất đầy rêu. Và anh ngủ thiếp đi ngay lập tức, cơ thể mệt mỏi, nhưng tâm hồn thanh thản.
+  </div>
+  <div class="en">
+    [288] Thereafter Zarathustra again went on for two hours, trusting to the path and the light of the stars: for he was an experienced night-walker, and liked to look into the face of all that slept. When the morning dawned, however, Zarathustra found himself in a thick forest, and no path was any longer visible. He then put the dead man in a hollow tree at his head—for he wanted to protect him from the wolves—and laid himself down on the ground and moss. And immediately he fell asleep, tired in body, but with a tranquil soul.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [289]
+  </div>
+  <div class="en">
+    [289]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [290] 9.
+  </div>
+  <div class="en">
+    [290] 9.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [291]
+  </div>
+  <div class="en">
+    [291]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [292] Zarathustra ngủ rất lâu; và không chỉ bình minh hồng hào lướt qua đầu anh, mà cả buổi sáng nữa. Tuy nhiên, cuối cùng, anh mở mắt ra, và anh ngạc nhiên nhìn vào khu rừng và sự tĩnh lặng, ngạc nhiên nhìn vào chính mình. Sau đó, anh nhanh chóng đứng dậy, giống như một người đi biển đột nhiên nhìn thấy đất liền; và anh hét lên vì niềm hân hoan: vì anh nhìn thấy một chân lý mới. Và anh tự nhủ như thế này [với trái tim của mình]:
+  </div>
+  <div class="en">
+    [292] Long slept Zarathustra; and not only the rosy dawn passed over his head, but also the morning. At last, however, his eyes opened, and amazedly he gazed into the forest and the stillness, amazedly he gazed into himself. Then he arose quickly, like a seafarer who all at once seeth the land; and he shouted for joy: for he saw a new truth. And he spake thus to his heart:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [293]
+  </div>
+  <div class="en">
+    [293]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [294] Một ánh sáng đã lóe lên trong ta: Ta cần những người bạn đồng hành—những người còn sống; không phải những người bạn đồng hành đã chết và những xác chết, mà ta có thể mang theo đến bất cứ nơi nào ta muốn.
+  </div>
+  <div class="en">
+    [294] A light hath dawned upon me: I need companions—living ones; not dead companions and corpses, which I carry with me where I will.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [295]
+  </div>
+  <div class="en">
+    [295]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [296] Nhưng ta cần những người bạn đồng hành còn sống, những người sẽ theo ta vì chính họ muốn theo ta—và đến nơi ta muốn.
+  </div>
+  <div class="en">
+    [296] But I need living companions, who will follow me because they want to follow themselves—and to the place where I will.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [297]
+  </div>
+  <div class="en">
+    [297]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [298] Một ánh sáng đã lóe lên trong ta. Zarathustra không nói với mọi người, mà là với những người bạn đồng hành! Zarathustra sẽ không phải là người-chăn-chiên hay là chó canh của bầy chiên!
+  </div>
+  <div class="en">
+    [298] A light hath dawned upon me. Not to the people is Zarathustra to speak, but to companions! Zarathustra shall not be the herd’s herdsman and hound!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [299]
+  </div>
+  <div class="en">
+    [299]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [300] Để lôi kéo nhiều người khỏi bầy chiên—vì mục đích đó mà ta đến đây. Dân chúng và bầy chiên hẳn phải tức giận với ta: những người-chăn-chiên sẽ gọi Zarathustra là một tên cướp.
+  </div>
+  <div class="en">
+    [300] To allure many from the herd—for that purpose have I come. The people and the herd must be angry with me: a robber shall Zarathustra be called by the herdsmen.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [301]
+  </div>
+  <div class="en">
+    [301]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [302] Những người-chăn-chiên, ta nói, nhưng họ tự gọi mình là người sống tốt và công bằng. Những người-chăn-chiên, ta nói, nhưng họ tự gọi mình là những tín đồ của đức tin chính thống.
+  </div>
+  <div class="en">
+    [302] Herdsmen, I say, but they call themselves the good and just. Herdsmen, I say, but they call themselves the believers in the orthodox belief.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [303]
+  </div>
+  <div class="en">
+    [303]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [304] Hãy nhìn những người sống tốt và công bằng! Họ ghét ai nhất? Kẻ phá vỡ các giá trị của họ, kẻ phá vỡ, kẻ phá luật:—tuy nhiên, người đó chính là người sáng tạo.
+  </div>
+  <div class="en">
+    [304] Behold the good and just! Whom do they hate most? Him who breaketh up their tables of values, the breaker, the law-breaker:—he, however, is the creator.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [305]
+  </div>
+  <div class="en">
+    [305]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [306] Hãy nhìn tín đồ của mọi đức tin! Họ ghét ai nhất? Kẻ phá vỡ các giá trị của họ, kẻ phá vỡ, kẻ phá luật—tuy nhiên, đó chính là người sáng tạo.
+  </div>
+  <div class="en">
+    [306] Behold the believers of all beliefs! Whom do they hate most? Him who breaketh up their tables of values, the breaker, the law-breaker—he, however, is the creator.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [307]
+  </div>
+  <div class="en">
+    [307]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [308] Người sáng tạo tìm kiếm những người bạn đồng hành, không phải các xác chết—và cũng không phải bầy đàn hay các tín đồ. Người sáng tạo tìm kiếm những người đồng sáng tạo—những người sẽ khắc những giá trị mới lên trên những chiếc bàn mới.
+  </div>
+  <div class="en">
+    [308] Companions, the creator seeketh, not corpses—and not herds or believers either. Fellow-creators the creator seeketh—those who grave new values on new tables.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [309]
+  </div>
+  <div class="en">
+    [309]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [310] Người sáng tạo tìm kiếm những người bạn đồng hành và những thợ gặt theo cùng: vì mọi thứ đều chín trĩu cho vụ thu hoạch với anh ta. Nhưng anh ta thiếu một trăm lưỡi hái: nên anh bứt bông lúa và bực tức.
+  </div>
+  <div class="en">
+    [310] Companions, the creator seeketh, and fellow-reapers: for everything is ripe for the harvest with him. But he lacketh the hundred sickles: so he plucketh the ears of corn and is vexed.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [311]
+  </div>
+  <div class="en">
+    [311]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [312] Người sáng tạo tìm kiếm bạn đồng hành, và những thợ gặt biết mài lưỡi hái của họ. Họ sẽ được gọi là những kẻ hủy diệt, và những kẻ khinh miệt thiện và ác. Nhưng họ là những thợ gặt và những người-hân-hoan.
+  </div>
+  <div class="en">
+    [312] Companions, the creator seeketh, and such as know how to whet their sickles. Destroyers, will they be called, and despisers of good and evil. But they are the reapers and rejoicers.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [313]
+  </div>
+  <div class="en">
+    [313]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [314] Những người cùng sáng tạo, Zarathustra tìm kiếm; những thợ gặt theo cùng và những người cùng hân-hoan, Zarathustra tìm kiếm: họ liên quan gì đến bầy chiên, người-chăn-chiên và các xác chết!
+  </div>
+  <div class="en">
+    [314] Fellow-creators, Zarathustra seeketh; fellow-reapers and fellow-rejoicers, Zarathustra seeketh: what hath he to do with herds and herdsmen and corpses!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [315]
+  </div>
+  <div class="en">
+    [315]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [316] Và ngươi, người bạn đồng hành đầu tiên của ta, hãy yên nghỉ! Ta đã chôn ngươi cẩn thận trong cái thân cây rỗng của ngươi; ta đã cẩn thận giấu ngươi khỏi bầy sói.
+  </div>
+  <div class="en">
+    [316] And thou, my first companion, rest in peace! Well have I buried thee in thy hollow tree; well have I hid thee from the wolves.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [317]
+  </div>
+  <div class="en">
+    [317]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [318] Nhưng ta phải xa ngươi; đã đến lúc. 'Giữa bình minh tươi đẹp và bình minh tươi đẹp, một chân lý mới đã đến với ta.
+  </div>
+  <div class="en">
+    [318] But I part from thee; the time hath arrived. ‘Twixt rosy dawn and rosy dawn there came unto me a new truth.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [319]
+  </div>
+  <div class="en">
+    [319]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [320] Ta không còn là người-chăn-chiên, ta không còn là người đào huyệt. Ta sẽ không còn thuyết giáo với mọi người nữa; lần cuối cùng ta đã nói với người chết.
+  </div>
+  <div class="en">
+    [320] I am not to be a herdsman, I am not to be a grave-digger. Not any more will I discourse unto the people; for the last time have I spoken unto the dead.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [321]
+  </div>
+  <div class="en">
+    [321]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [322] Với những người sáng tạo, những thợ gặt và những người-hân-hoan, ta sẽ kết giao: ta sẽ chỉ cho họ cầu vồng, và tất cả những bậc thang đến với Superman.
+  </div>
+  <div class="en">
+    [322] With the creators, the reapers, and the rejoicers will I associate: the rainbow will I show them, and all the stairs to the Superman.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [323]
+  </div>
+  <div class="en">
+    [323]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [324] Đối với những người cô đơn, ta sẽ hát bài ca của mình, và đối với những người sống thành đôi; và đối với những ai vẫn còn sẵn sàng lắng nghe những điều chưa được lắng nghe, ta sẽ khiến trái tim họ nặng trĩu với niềm hạnh phúc của ta.
+  </div>
+  <div class="en">
+    [324] To the lone-dwellers will I sing my song, and to the twain-dwellers; and unto him who hath still ears for the unheard, will I make the heart heavy with my happiness.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [325]
+  </div>
+  <div class="en">
+    [325]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [326] Ta tạo ra mục tiêu của mình, ta theo đuổi con đường của mình; ta sẽ bỏ qua những kẻ lảng vảng và chậm chạp. Hãy để sự đi-lên của ta là sự đi-xuống của họ!
+  </div>
+  <div class="en">
+    [326] I make for my goal, I follow my course; over the loitering and tardy will I leap. Thus let my on-going be their down-going!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [327]
+  </div>
+  <div class="en">
+    [327]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [328] 10.
+  </div>
+  <div class="en">
+    [328] 10.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [329]
+  </div>
+  <div class="en">
+    [329]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [330] Zarathustra đã tự nhủ như vậy khi mặt trời đứng giữa đỉnh đầu. Rồi anh nhìn lên cao với vẻ dò hỏi, vì anh nghe thấy tiếng chim hót sắc lạnh trên đầu mình. Và kìa! Một con đại bàng bay lượn trên không trung theo những vòng tròn rộng, và trên đó có treo theo một con rắn, không giống như một con mồi, mà giống như một người bạn: nó cuộn mình quanh cổ đại bàng.
+  </div>
+  <div class="en">
+    [330] This had Zarathustra said to his heart when the sun stood at noontide. Then he looked inquiringly aloft,—for he heard above him the sharp call of a bird. And behold! An eagle swept through the air in wide circles, and on it hung a serpent, not like a prey, but like a friend: for it kept itself coiled round the eagle’s neck.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [331]
+  </div>
+  <div class="en">
+    [331]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [332] “Chúng là những con vật của ta,” Zarathustra nói, và thầm hân hoan.
+  </div>
+  <div class="en">
+    [332] “They are mine animals,” said Zarathustra, and rejoiced in his heart.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [333]
+  </div>
+  <div class="en">
+    [333]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [334] “Loài vật kiêu hãnh nhất dưới ánh mặt trời, và loài vật khôn ngoan nhất dưới ánh mặt trời, chúng đã ra ngoài để xem xét.
+  </div>
+  <div class="en">
+    [334] “The proudest animal under the sun, and the wisest animal under the sun,—they have come out to reconnoitre.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [335]
+  </div>
+  <div class="en">
+    [335]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [336] Chúng muốn biết liệu Zarathustra còn sống không. Thật ra, ta còn sống không?
+  </div>
+  <div class="en">
+    [336] They want to know whether Zarathustra still liveth. Verily, do I still live?
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [337]
+  </div>
+  <div class="en">
+    [337]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [338] Ta thấy ở giữa loài người nguy hiểm hơn so với giữa loài vật; Zarathustra đang đi trên những con đường nguy hiểm. Hãy để những con vật của ta dẫn đường cho ta!”
+  </div>
+  <div class="en">
+    [338] More dangerous have I found it among men than among animals; in dangerous paths goeth Zarathustra. Let mine animals lead me!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [339]
+  </div>
+  <div class="en">
+    [339]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [340] Khi Zarathustra nói như vậy, anh nhớ lại lời của ông già trong rừng. Rồi anh thở dài và tự nhủ như thế này:
+  </div>
+  <div class="en">
+    [340] When Zarathustra had said this, he remembered the words of the saint in the forest. Then he sighed and spake thus to his heart:
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [341]
+  </div>
+  <div class="en">
+    [341]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [342] “Ước gì ta khôn ngoan hơn! Ta ước từ tận đáy lòng là ta đã khôn ngoan, giống như con rắn của ta!
+  </div>
+  <div class="en">
+    [342] “Would that I were wiser! Would that I were wise from the very heart, like my serpent!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [343]
+  </div>
+  <div class="en">
+    [343]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [344] Nhưng ta đang cầu mong điều không thể. Nên ta mong rằng lòng kiêu hãnh của ta hãy luôn đi cùng với sự khôn ngoan của ta!
+  </div>
+  <div class="en">
+    [344] But I am asking the impossible. Therefore do I ask my pride to go always with my wisdom!
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [345]
+  </div>
+  <div class="en">
+    [345]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [346] Và nếu một ngày nào đó sự khôn ngoan của ta từ bỏ ta:—than ôi! nếu nó thích ra đi!—thì lòng kiêu hãnh của ta cũng hãy ra đi cùng với sự ngốc nghếch của ta!”
+  </div>
+  <div class="en">
+    [346] And if my wisdom should some day forsake me:—alas! it loveth to fly away!—may my pride then fly with my folly!”
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [347]
+  </div>
+  <div class="en">
+    [347]
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [348] Và Zarathustra đã bắt đầu đi-xuống như vậy.
+  </div>
+  <div class="en">
+    [348] Thus began Zarathustra’s down-going.
+  </div>
+</div>
+<div class="parallel-text">
+  <div class="vi">
+    [349]
+  </div>
+  <div class="en">
+    [349]
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+  toggle("VI")
+</script>
+</html>
